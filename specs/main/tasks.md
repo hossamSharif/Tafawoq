@@ -20,17 +20,17 @@
 
 **Purpose**: Initialize React Native Expo project with core dependencies and configuration
 
-- [ ] T001 Initialize Expo React Native project with SDK 51+ and TypeScript using `npx create-expo-app tafawoq --template expo-template-blank-typescript`
-- [ ] T002 [P] Install core dependencies: @supabase/supabase-js, @stripe/stripe-react-native, @google/generative-ai, @react-navigation/native, @react-navigation/stack in package.json
-- [ ] T003 [P] Install UI dependencies: react-native-paper, react-native-safe-area-context, expo-font, react-native-fast-image in package.json
-- [ ] T004 [P] Configure TypeScript with strict mode (strictNullChecks, noImplicitAny, esModuleInterop) in tsconfig.json per research.md
-- [ ] T005 [P] Configure ESLint with @typescript-eslint rules in .eslintrc.js
-- [ ] T006 [P] Create .gitignore with .env, node_modules, build artifacts
-- [ ] T007 [P] Create .env.example with all required environment variables per quickstart.md
-- [ ] T008 [P] Configure Expo app.json with RTL support, Noto Kufi Arabic font, and SafeAreaView settings
-- [ ] T009 Create src/ directory structure: components/, screens/, services/, hooks/, types/, navigation/, contexts/, config/, utils/, assets/
-- [ ] T010 [P] Create __tests__/ directory structure: unit/, component/, e2e/
-- [ ] T011 Configure Jest and React Native Testing Library in jest.config.js
+- [X] T001 Initialize Expo React Native project with SDK 51+ and TypeScript using `npx create-expo-app tafawoq --template expo-template-blank-typescript`
+- [X] T002 [P] Install core dependencies: @supabase/supabase-js, @stripe/stripe-react-native, @google/generative-ai, @react-navigation/native, @react-navigation/stack in package.json
+- [X] T003 [P] Install UI dependencies: react-native-paper, react-native-safe-area-context, expo-font, react-native-fast-image in package.json
+- [X] T004 [P] Configure TypeScript with strict mode (strictNullChecks, noImplicitAny, esModuleInterop) in tsconfig.json per research.md
+- [X] T005 [P] Configure ESLint with @typescript-eslint rules in .eslintrc.js
+- [X] T006 [P] Create .gitignore with .env, node_modules, build artifacts
+- [X] T007 [P] Create .env.example with all required environment variables per quickstart.md
+- [X] T008 [P] Configure Expo app.json with RTL support, Noto Kufi Arabic font, and SafeAreaView settings
+- [X] T009 Create src/ directory structure: components/, screens/, services/, hooks/, types/, navigation/, contexts/, config/, utils/, assets/
+- [X] T010 [P] Create __tests__/ directory structure: unit/, component/, e2e/
+- [X] T011 Configure Jest and React Native Testing Library in jest.config.js
 
 **Checkpoint**: Project structure initialized, dependencies installed, ready for foundational implementation
 
