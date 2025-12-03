@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html class="light" dir="rtl" lang="ar"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Create Exam - Verbal Categories</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@100..900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<style>
+      body {
+        font-family: 'Noto Kufi Arabic', 'Lexend', sans-serif;
+      }
+      .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      }
+    </style>
+<script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "primary": "#006C35",
+              "background-light": "#F9FAFB",
+              "background-dark": "#102216",
+            },
+            fontFamily: {
+              "display": ["Noto Kufi Arabic", "Lexend", "sans-serif"]
+            },
+            borderRadius: {
+              "DEFAULT": "0.5rem",
+              "lg": "1rem",
+              "xl": "1.5rem",
+              "full": "9999px"
+            },
+          },
+        },
+      }
+    </script>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display">
+<div class="relative flex min-h-screen w-full flex-col group/design-root overflow-x-hidden">
+<header class="sticky top-0 z-10 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-sm">
+<div class="flex items-center p-4 pb-2 justify-between">
+<div class="flex size-12 shrink-0 items-center justify-center">
+<span class="material-symbols-outlined text-gray-800 dark:text-gray-200">arrow_forward_ios</span>
+</div>
+<h1 class="text-lg font-bold leading-tight tracking-[-0.015em] flex-1 text-center text-gray-900 dark:text-gray-100">تدريب مخصص</h1>
+<div class="size-12 shrink-0"></div> 
+</div>
+</header>
+<main class="flex-grow pb-28"> 
+<div class="flex px-4 py-3">
+<div class="flex h-12 flex-1 items-center justify-center rounded-xl bg-gray-200/50 dark:bg-gray-800 p-1.5 shadow-sm">
+<label class="flex cursor-pointer h-full grow items-center justify-center overflow-hidden rounded-lg px-2 has-[:checked]:bg-white has-[:checked]:dark:bg-gray-700 has-[:checked]:shadow-md has-[:checked]:text-gray-900 has-[:checked]:dark:text-white text-gray-500 dark:text-gray-400 text-sm font-bold leading-normal transition-all duration-200">
+<span class="truncate">تدرب علي الكمي</span>
+<input class="invisible w-0" name="training_type" type="radio" value="quantitative"/>
+</label>
+<label class="flex cursor-pointer h-full grow items-center justify-center overflow-hidden rounded-lg px-2 has-[:checked]:bg-white has-[:checked]:dark:bg-gray-700 has-[:checked]:shadow-md has-[:checked]:text-gray-900 has-[:checked]:dark:text-white text-gray-500 dark:text-gray-400 text-sm font-bold leading-normal transition-all duration-200">
+<span class="truncate">تدرب علي اللفظي</span>
+<input checked="" class="invisible w-0" name="training_type" type="radio" value="verbal"/>
+</label>
+</div>
+</div>
+<h2 class="text-lg font-bold leading-tight tracking-[-0.015em] px-4 pb-2 pt-4 text-gray-900 dark:text-gray-100">اختر فئة واحدة أو أكثر</h2>
+<div class="px-4 bg-white dark:bg-gray-900 mx-4 rounded-xl shadow-sm">
+<label class="flex gap-x-4 py-4 flex-row-reverse justify-between items-center border-b border-gray-100 dark:border-gray-800">
+<p class="text-gray-800 dark:text-gray-200 text-base font-normal leading-normal">التناظر اللفظي</p>
+<input class="h-6 w-6 rounded-md border-gray-300 dark:border-gray-600 border-2 bg-transparent text-primary checked:bg-primary checked:border-primary focus:ring-0 focus:ring-offset-0 focus:border-gray-300 dark:focus:border-gray-600" style="--checkbox-tick-svg: url('data:image/svg+xml,%3csvg viewBox=%270 0 16 16%27 fill=%27white%27 xmlns=%27http://www.w3.org/2000/svg%27%3e%3cpath d=%27M12.207 4.793a1 1 0 010 1.414l-5 5a1 1 0 01-1.414 0l-2-2a1 1 0 011.414-1.414L6.5 9.086l4.293-4.293a1 1 0 011.414 0z%27/%3e%3c/svg%3e');" type="checkbox"/>
+</label>
+<label class="flex gap-x-4 py-4 flex-row-reverse justify-between items-center border-b border-gray-100 dark:border-gray-800">
+<p class="text-gray-800 dark:text-gray-200 text-base font-normal leading-normal">إكمال الجمل</p>
+<input checked="" class="h-6 w-6 rounded-md border-gray-300 dark:border-gray-600 border-2 bg-transparent text-primary checked:bg-primary checked:border-primary focus:ring-0 focus:ring-offset-0 focus:border-gray-300 dark:focus:border-gray-600" style="--checkbox-tick-svg: url('data:image/svg+xml,%3csvg viewBox=%270 0 16 16%27 fill=%27white%27 xmlns=%27http://www.w3.org/2000/svg%27%3e%3cpath d=%27M12.207 4.793a1 1 0 010 1.414l-5 5a1 1 0 01-1.414 0l-2-2a1 1 0 011.414-1.414L6.5 9.086l4.293-4.293a1 1 0 011.414 0z%27/%3e%3c/svg%3e');" type="checkbox"/>
+</label>
+<label class="flex gap-x-4 py-4 flex-row-reverse justify-between items-center border-b border-gray-100 dark:border-gray-800">
+<p class="text-gray-800 dark:text-gray-200 text-base font-normal leading-normal">الخطأ السياقي</p>
+<input class="h-6 w-6 rounded-md border-gray-300 dark:border-gray-600 border-2 bg-transparent text-primary checked:bg-primary checked:border-primary focus:ring-0 focus:ring-offset-0 focus:border-gray-300 dark:focus:border-gray-600" style="--checkbox-tick-svg: url('data:image/svg+xml,%3csvg viewBox=%270 0 16 16%27 fill=%27white%27 xmlns=%27http://www.w3.org/2000/svg%27%3e%3cpath d=%27M12.207 4.793a1 1 0 010 1.414l-5 5a1 1 0 01-1.414 0l-2-2a1 1 0 011.414-1.414L6.5 9.086l4.293-4.293a1 1 0 011.414 0z%27/%3e%3c/svg%3e');" type="checkbox"/>
+</label>
+<label class="flex gap-x-4 py-4 flex-row-reverse justify-between items-center border-b border-gray-100 dark:border-gray-800">
+<p class="text-gray-800 dark:text-gray-200 text-base font-normal leading-normal">المفردة الشاذة</p>
+<input class="h-6 w-6 rounded-md border-gray-300 dark:border-gray-600 border-2 bg-transparent text-primary checked:bg-primary checked:border-primary focus:ring-0 focus:ring-offset-0 focus:border-gray-300 dark:focus:border-gray-600" style="--checkbox-tick-svg: url('data:image/svg+xml,%3csvg viewBox=%270 0 16 16%27 fill=%27white%27 xmlns=%27http://www.w3.org/2000/svg%27%3e%3cpath d=%27M12.207 4.793a1 1 0 010 1.414l-5 5a1 1 0 01-1.414 0l-2-2a1 1 0 011.414-1.414L6.5 9.086l4.293-4.293a1 1 0 011.414 0z%27/%3e%3c/svg%3e');" type="checkbox"/>
+</label>
+<label class="flex gap-x-4 py-4 flex-row-reverse justify-between items-center">
+<p class="text-gray-800 dark:text-gray-200 text-base font-normal leading-normal">استيعاب المقروء</p>
+<input checked="" class="h-6 w-6 rounded-md border-gray-300 dark:border-gray-600 border-2 bg-transparent text-primary checked:bg-primary checked:border-primary focus:ring-0 focus:ring-offset-0 focus:border-gray-300 dark:focus:border-gray-600" style="--checkbox-tick-svg: url('data:image/svg+xml,%3csvg viewBox=%270 0 16 16%27 fill=%27white%27 xmlns=%27http://www.w3.org/2000/svg%27%3e%3cpath d=%27M12.207 4.793a1 1 0 010 1.414l-5 5a1 1 0 01-1.414 0l-2-2a1 1 0 011.414-1.414L6.5 9.086l4.293-4.293a1 1 0 011.414 0z%27/%3e%3c/svg%3e');" type="checkbox"/>
+</label>
+</div>
+</main>
+<footer class="fixed bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-background-light dark:from-background-dark to-transparent">
+<div class="flex">
+<button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-14 px-5 flex-1 bg-primary text-white text-base font-bold leading-normal tracking-[0.015em] shadow-lg shadow-primary/30 hover:bg-primary/90 transition-colors">
+<span class="truncate">الخطوة التالية</span>
+</button>
+</div>
+</footer>
+</div>
+</body></html>

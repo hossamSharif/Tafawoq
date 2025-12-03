@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="ar"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Subscription History (No Tabs)</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<style>
+    .material-symbols-outlined {
+      font-variation-settings:
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 24
+    }
+    .material-symbols-outlined.fill {
+      font-variation-settings: 'FILL' 1;
+    }
+  </style>
+<script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#05c763",
+            "background-light": "#F9FAFB",
+            "background-dark": "#0f2319",
+          },
+          fontFamily: {
+            "display": ["Noto Kufi Arabic", "sans-serif"]
+          },
+          borderRadius: {
+            "DEFAULT": "0.5rem",
+            "lg": "1rem",
+            "xl": "1.5rem",
+            "full": "9999px"
+          },
+        },
+      },
+    }
+  </script>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="font-display">
+<div class="relative flex h-screen w-full flex-col bg-background-light dark:bg-background-dark group/design-root overflow-hidden">
+<header class="flex shrink-0 items-center justify-between bg-white dark:bg-gray-900/50 p-4 border-b border-gray-200/50 dark:border-gray-800">
+<div class="flex size-12 shrink-0 items-center justify-center">
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10" data-alt="User profile avatar" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBu3hsCMcHtyQxNe6kH1_JJSkAnkcJwfo7FoMVkUz8DZU2uOxRss9UlJ-0tEwb73BaXFLuRedyvt74VZccfZOFyMQpTI1wc96Tc1HSmIKqO4SP7z_jShvsFODu4o5R6K8oaDPO6OQ54KnE4EfLImbsQY-t6XeNnZsRicKbtasui3OsM6TgEguMUq2aN86gBXRA_Y0_PqH_AjgNUEM6KaVjBWuO-s9QX8_vWDbg2X0pKRB3MmD4YvU38y-AphfEbHvBlBVK_Y7mDNsE");'></div>
+</div>
+<h1 class="text-gray-900 dark:text-white text-lg font-bold leading-tight tracking-[-0.015em] flex-1 text-center">سجل الاشتراكات</h1>
+<div class="flex size-12 shrink-0 items-center"></div>
+</header>
+<main class="flex-1 overflow-y-auto p-4 space-y-4">
+<div class="bg-white dark:bg-gray-800 rounded-xl shadow-sm p-4">
+<div class="flex justify-between items-start gap-x-6 pb-2 border-b border-gray-100 dark:border-gray-700">
+<p class="text-gray-800 dark:text-gray-100 text-base font-bold leading-normal">الخطة المميزة</p>
+<span class="inline-flex items-center rounded-full bg-green-100 dark:bg-green-900/50 px-2 py-1 text-xs font-medium text-green-700 dark:text-green-300">نشط</span>
+</div>
+<div class="pt-4 space-y-3">
+<div class="flex justify-between gap-x-6">
+<p class="text-gray-500 dark:text-gray-400 text-sm font-normal leading-normal">تاريخ البدء</p>
+<p class="text-gray-800 dark:text-gray-200 text-sm font-medium leading-normal text-left">2024/01/01</p>
+</div>
+<div class="flex justify-between gap-x-6">
+<p class="text-gray-500 dark:text-gray-400 text-sm font-normal leading-normal">تاريخ الانتهاء</p>
+<p class="text-gray-800 dark:text-gray-200 text-sm font-medium leading-normal text-left">2025/01/01</p>
+</div>
+<div class="flex justify-between gap-x-6">
+<p class="text-gray-500 dark:text-gray-400 text-sm font-normal leading-normal">المبلغ المدفوع</p>
+<p class="text-[#D4AF37] text-sm font-bold leading-normal text-left">99 ريال سعودي / شهريًا</p>
+</div>
+</div>
+</div>
+<div class="bg-white dark:bg-gray-800 rounded-xl shadow-sm p-4">
+<div class="flex justify-between items-start gap-x-6 pb-2 border-b border-gray-100 dark:border-gray-700">
+<p class="text-gray-800 dark:text-gray-100 text-base font-bold leading-normal">الخطة الأساسية</p>
+<span class="inline-flex items-center rounded-full bg-gray-100 dark:bg-gray-700 px-2 py-1 text-xs font-medium text-gray-600 dark:text-gray-300">منتهي</span>
+</div>
+<div class="pt-4 space-y-3">
+<div class="flex justify-between gap-x-6">
+<p class="text-gray-500 dark:text-gray-400 text-sm font-normal leading-normal">تاريخ البدء</p>
+<p class="text-gray-800 dark:text-gray-200 text-sm font-medium leading-normal text-left">2023/01/01</p>
+</div>
+<div class="flex justify-between gap-x-6">
+<p class="text-gray-500 dark:text-gray-400 text-sm font-normal leading-normal">تاريخ الانتهاء</p>
+<p class="text-gray-800 dark:text-gray-200 text-sm font-medium leading-normal text-left">2024/01/01</p>
+</div>
+<div class="flex justify-between gap-x-6">
+<p class="text-gray-500 dark:text-gray-400 text-sm font-normal leading-normal">المبلغ المدفوع</p>
+<p class="text-[#D4AF37] text-sm font-bold leading-normal text-left">49 ريال سعودي / شهريًا</p>
+</div>
+</div>
+</div>
+<div class="bg-white dark:bg-gray-800 rounded-xl shadow-sm p-4">
+<div class="flex justify-between items-start gap-x-6 pb-2 border-b border-gray-100 dark:border-gray-700">
+<p class="text-gray-800 dark:text-gray-100 text-base font-bold leading-normal">الخطة السنوية</p>
+<span class="inline-flex items-center rounded-full bg-red-100 dark:bg-red-900/50 px-2 py-1 text-xs font-medium text-red-700 dark:text-red-300">ملغى</span>
+</div>
+<div class="pt-4 space-y-3">
+<div class="flex justify-between gap-x-6">
+<p class="text-gray-500 dark:text-gray-400 text-sm font-normal leading-normal">تاريخ البدء</p>
+<p class="text-gray-800 dark:text-gray-200 text-sm font-medium leading-normal text-left">2022/12/15</p>
+</div>
+<div class="flex justify-between gap-x-6">
+<p class="text-gray-500 dark:text-gray-400 text-sm font-normal leading-normal">تاريخ الانتهاء</p>
+<p class="text-gray-800 dark:text-gray-200 text-sm font-medium leading-normal text-left">2023/12/15</p>
+</div>
+<div class="flex justify-between gap-x-6">
+<p class="text-gray-500 dark:text-gray-400 text-sm font-normal leading-normal">المبلغ المدفوع</p>
+<p class="text-[#D4AF37] text-sm font-bold leading-normal text-left">499 ريال سعودي / سنويًا</p>
+</div>
+</div>
+</div>
+</main>
+</div>
+
+</body></html>

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+
+<html class="light" dir="rtl" lang="ar"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Plans Page</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,0" rel="stylesheet"/>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#006C35", // Saudi Deep Green for primary CTA
+            "background-light": "#F5F5F7", // Light Grey
+            "background-dark": "#101012", // Dark mode equivalent
+            "card-light": "#FFFFFF",
+            "card-dark": "#1C1C1E",
+            "text-light": "#333333", // Dark Charcoal
+            "text-dark": "#E5E5E7",
+            "accent": "#C1A464", // Muted Gold for price highlight
+          },
+          fontFamily: {
+            "display": ["Noto Kufi Arabic", "sans-serif"]
+          },
+          borderRadius: {
+            "DEFAULT": "0.75rem", // 12px
+            "lg": "1rem", // 16px
+            "xl": "1.5rem", // 24px
+            "full": "9999px"
+          },
+        },
+      },
+    }
+  </script>
+<style>
+    .material-symbols-outlined {
+      font-variation-settings:
+      'FILL' 0,
+      'wght' 400,
+      'GRAD' 0,
+      'opsz' 24
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="font-display bg-background-light dark:bg-background-dark">
+<div class="relative flex h-auto min-h-screen w-full flex-col group/design-root overflow-x-hidden">
+<!-- Top App Bar -->
+<div class="flex items-center bg-background-light dark:bg-background-dark p-4 pb-2 justify-between sticky top-0 z-10">
+<div class="flex size-10 shrink-0 items-center justify-center"></div>
+<h2 class="text-text-light dark:text-text-dark text-lg font-bold leading-tight tracking-[-0.015em] flex-1 text-center">خطط الاشتراك</h2>
+<button class="text-text-light dark:text-text-dark flex size-10 shrink-0 items-center justify-center rounded-full hover:bg-black/5 dark:hover:bg-white/5">
+<span class="material-symbols-outlined">arrow_forward</span>
+</button>
+</div>
+<!-- Pricing Cards Section -->
+<div class="flex flex-col gap-6 px-4 py-3">
+<!-- Freemium Card -->
+<div class="flex flex-1 flex-col gap-6 rounded-xl border border-gray-200/80 dark:border-gray-700/50 bg-card-light dark:bg-card-dark p-6 shadow-sm">
+<div class="flex flex-col gap-2">
+<h1 class="text-text-light dark:text-text-dark text-xl font-bold leading-tight">الخطة المجانية</h1>
+<p class="text-text-light/70 dark:text-text-dark/70 text-sm">ابدأ رحلتك التعليمية معنا مجانًا.</p>
+</div>
+<div class="flex flex-col gap-3">
+<div class="text-sm font-normal leading-normal flex items-center gap-3 text-text-light dark:text-text-dark">
+<span class="material-symbols-outlined text-primary text-xl">check_circle</span>
+            الوصول إلى الدروس الأساسية
+          </div>
+<div class="text-sm font-normal leading-normal flex items-center gap-3 text-text-light dark:text-text-dark">
+<span class="material-symbols-outlined text-primary text-xl">check_circle</span>
+            أسئلة تدريبية محدودة
+          </div>
+</div>
+<button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 px-4 bg-transparent text-primary text-base font-bold leading-normal border-2 border-primary hover:bg-primary/10 transition-colors">
+<span class="truncate">البدء مجانًا</span>
+</button>
+</div>
+<!-- Premium Card -->
+<div class="flex flex-1 flex-col gap-6 rounded-xl border-2 border-accent bg-card-light dark:bg-card-dark p-6 shadow-lg relative overflow-hidden">
+<div class="absolute top-0 -left-10 transform -translate-y-1/2 rotate-45 bg-accent text-white px-12 py-1 text-xs font-bold uppercase tracking-wider">
+            الأكثر شيوعًا
+        </div>
+<div class="flex flex-col gap-2">
+<h1 class="text-text-light dark:text-text-dark text-xl font-bold leading-tight">الخطة المميزة</h1>
+<p class="flex items-baseline gap-2 text-text-light dark:text-text-dark">
+<span class="text-accent text-4xl font-black leading-tight tracking-[-0.033em]">99</span>
+<span class="text-accent text-lg font-bold">ريال سعودي</span>
+<span class="text-text-light/70 dark:text-text-dark/70 text-base font-medium">/ شهريًا</span>
+</p>
+</div>
+<div class="flex flex-col gap-3">
+<div class="text-sm font-normal leading-normal flex items-center gap-3 text-text-light dark:text-text-dark">
+<span class="material-symbols-outlined text-primary text-xl">check_circle</span>
+            كل مميزات الخطة المجانية
+          </div>
+<div class="text-sm font-normal leading-normal flex items-center gap-3 text-text-light dark:text-text-dark">
+<span class="material-symbols-outlined text-primary text-xl">check_circle</span>
+            وصول غير محدود لجميع الدروس
+          </div>
+<div class="text-sm font-normal leading-normal flex items-center gap-3 text-text-light dark:text-text-dark">
+<span class="material-symbols-outlined text-primary text-xl">check_circle</span>
+            تحليلات متقدمة بالذكاء الاصطناعي
+          </div>
+<div class="text-sm font-normal leading-normal flex items-center gap-3 text-text-light dark:text-text-dark">
+<span class="material-symbols-outlined text-primary text-xl">check_circle</span>
+            مسارات تعلم مخصصة
+          </div>
+</div>
+<button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 px-4 bg-primary text-white text-base font-bold leading-normal shadow-md shadow-primary/30 hover:bg-primary/90 transition-colors">
+<span class="truncate">الاشتراك الآن</span>
+</button>
+</div>
+</div>
+<div class="h-5"></div>
+</div>
+</body></html>

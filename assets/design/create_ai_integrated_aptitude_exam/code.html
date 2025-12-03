@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html class="light" dir="rtl" lang="ar"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>AI Integrated Aptitude Exam</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;700&amp;family=Noto+Kufi+Arabic:wght@400;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#2563EB",
+            "background-light": "#F9FAFB",
+            "background-dark": "#102216",
+            "text-primary-light": "#111827",
+            "text-secondary-light": "#4B5563",
+            "text-primary-dark": "#F9FAFB",
+            "text-secondary-dark": "#D1D5DB"
+          },
+          fontFamily: {
+            "display": ["Noto Kufi Arabic", "Lexend", "sans-serif"]
+          },
+          borderRadius: {
+            "DEFAULT": "0.5rem",
+            "lg": "1rem",
+            "xl": "1.5rem",
+            "full": "9999px"
+          },
+        },
+      },
+    }
+  </script>
+<style>
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="font-display">
+<div class="relative flex h-auto min-h-screen w-full flex-col bg-background-light dark:bg-background-dark group/design-root overflow-x-hidden">
+<!-- Top App Bar -->
+<div class="flex items-center bg-background-light dark:bg-background-dark p-4 pb-2 justify-between sticky top-0 z-10">
+<div class="flex size-12 shrink-0 items-center justify-start text-text-primary-light dark:text-text-primary-dark">
+<span class="material-symbols-outlined text-3xl">arrow_forward_ios</span>
+</div>
+<h2 class="text-text-primary-light dark:text-text-primary-dark text-lg font-bold leading-tight tracking-[-0.015em] flex-1 text-center">اختبار قدرات بالذكاء</h2>
+<div class="flex size-12 shrink-0 items-center"></div>
+</div>
+<div class="flex flex-col flex-grow px-4">
+<div class="flex flex-col items-center justify-center flex-grow text-center">
+<!-- Headline Text -->
+<h1 class="text-text-primary-light dark:text-text-primary-dark tracking-tight text-[32px] font-bold leading-tight pt-6">أطلق العنان لقدراتك الكاملة</h1>
+<!-- Body Text -->
+<p class="text-text-secondary-light dark:text-text-secondary-dark text-base font-normal leading-relaxed pb-3 pt-4 max-w-md">انشئ اختبار قدرات متكامل بالذكاء الإصطناعي من مصادر موثوقة ومن بنك الإمتحانات السابقة.</p>
+<!-- Image -->
+<div class="flex w-full justify-center py-8">
+<div class="w-full max-w-xs gap-1 overflow-hidden flex">
+<div class="w-full bg-center bg-no-repeat bg-contain aspect-square" data-alt="Abstract illustration representing artificial intelligence and knowledge, with interconnected nodes forming a brain-like shape." style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCdD0er6Dg4YCiJd-I9YjWI8I3UL44IAmFua_y6RKIzlZZjw8hufRw14qGm7QA8GLYxyTHnLAiyfLj9Coy1as64VxaZtlr7J9VlxMsUBtOuiq_5ego3I0cIV0jDRm8ofW1mW03UHyO99c4bIvl1fegSkhhTlMEQx4qAVBi6mxYLpoXu7rrWmdLs-x8E7cW1kDKp0jvPNEROzWRHtbIq9tztk8aDDkzlcijn9SmT_szLFaaUSJf0s4Db4MIMeYF5fo6XfW9tJx7feNY"); mask-image: radial-gradient(circle, white 60%, transparent 100%); -webkit-mask-image: radial-gradient(circle, white 60%, transparent 100%);'></div>
+</div>
+</div>
+</div>
+</div>
+<!-- Single Button -->
+<div class="flex px-4 py-6 sticky bottom-0 bg-background-light dark:bg-background-dark">
+<button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-14 px-5 flex-1 bg-primary text-white text-base font-bold leading-normal tracking-[0.015em]">
+<span class="truncate">أنشئ اختبارك الأول</span>
+</button>
+</div>
+</div>
+</body></html>

@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html class="light" dir="rtl" lang="ar"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Settings Page (Updated Tabs)</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,0" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#05c763",
+            "background-light": "#f5f8f7",
+            "background-dark": "#0f2319",
+          },
+          fontFamily: {
+            "display": ["Noto Kufi Arabic", "sans-serif"]
+          },
+          borderRadius: {
+            "DEFAULT": "0.25rem",
+            "lg": "0.5rem",
+            "xl": "0.75rem",
+            "full": "9999px"
+          },
+        },
+      },
+    }
+  </script>
+<style>
+    .material-symbols-outlined {
+      font-variation-settings:
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 24;
+    }
+    .active .material-symbols-outlined {
+        font-variation-settings:
+        'FILL' 1,
+        'wght' 700;
+    }
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="font-display">
+<div class="relative flex h-auto min-h-screen w-full flex-col bg-background-light dark:bg-background-dark group/design-root overflow-x-hidden">
+<div class="flex items-center bg-background-light dark:bg-background-dark p-4 pb-2 justify-between sticky top-0 z-10 border-b border-gray-200/80 dark:border-gray-700/80">
+<button class="flex size-10 items-center justify-center rounded-full">
+<img alt="User Avatar" class="h-10 w-10 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCI7ZH1OFeI4tR762EBch9fjtEAviL3xngkKonVEifyDmLC2wPZAV6E-iDtXTW-u47iqzAPusYlCzDeOAs-FaCXsDnLYAy0zMNMf0Plfk0w_3oHPAgO__UTbcDmdMr1uzOn0aOrgZgDW9zIxEdSMfWtNVqa7EcK4TJh9ZT6HHCu0w_c-w8Tw8sIhwx-dr-_3iw7DOdYA_cal6ynccvcMfjUPrhyxw8tAVfnaXzhMbiZsXCYOwbflrzDyVQwVX_azm2gJFcBoCR_Hvs"/>
+</button>
+<h2 class="text-[#111814] dark:text-gray-100 text-lg font-bold leading-tight tracking-[-0.015em] flex-1 text-center">الإعدادات</h2>
+<div class="w-10"></div>
+</div>
+<div class="flex flex-col flex-1 pb-24">
+<div class="flex flex-col bg-white dark:bg-gray-800/50 rounded-xl mx-4 mt-6 overflow-hidden border border-gray-200/80 dark:border-gray-700/80">
+<a class="flex items-center gap-4 px-4 min-h-[56px] justify-between active:bg-gray-100 dark:active:bg-gray-700/50" href="#">
+<div class="flex items-center gap-4 flex-1">
+<div class="text-[#111814] dark:text-gray-300 flex items-center justify-center rounded-lg shrink-0 size-10">
+<span class="material-symbols-outlined text-gray-500 dark:text-gray-400">person</span>
+</div>
+<p class="text-[#111814] dark:text-gray-100 text-base font-medium leading-normal flex-1 truncate">الملف الشخصي</p>
+</div>
+<div class="shrink-0">
+<div class="text-[#AEAEB2] dark:text-gray-500 flex size-7 items-center justify-center">
+<span class="material-symbols-outlined">chevron_left</span>
+</div>
+</div>
+</a>
+<hr class="border-t border-gray-200/80 dark:border-gray-700/80 ml-4 mr-14"/>
+<a class="flex items-center gap-4 px-4 min-h-[56px] justify-between active:bg-gray-100 dark:active:bg-gray-700/50" href="#">
+<div class="flex items-center gap-4 flex-1">
+<div class="text-[#111814] dark:text-gray-300 flex items-center justify-center rounded-lg shrink-0 size-10">
+<span class="material-symbols-outlined text-gray-500 dark:text-gray-400">receipt_long</span>
+</div>
+<p class="text-[#111814] dark:text-gray-100 text-base font-medium leading-normal flex-1 truncate">سجل الاشتراكات</p>
+</div>
+<div class="shrink-0">
+<div class="text-[#AEAEB2] dark:text-gray-500 flex size-7 items-center justify-center">
+<span class="material-symbols-outlined">chevron_left</span>
+</div>
+</div>
+</a>
+<hr class="border-t border-gray-200/80 dark:border-gray-700/80 ml-4 mr-14"/>
+<a class="flex items-center gap-4 px-4 min-h-[56px] justify-between active:bg-gray-100 dark:active:bg-gray-700/50" href="#">
+<div class="flex items-center gap-4 flex-1">
+<div class="text-[#111814] dark:text-gray-300 flex items-center justify-center rounded-lg shrink-0 size-10">
+<span class="material-symbols-outlined text-gray-500 dark:text-gray-400">notifications</span>
+</div>
+<p class="text-[#111814] dark:text-gray-100 text-base font-medium leading-normal flex-1 truncate">مركز الإشعارات</p>
+</div>
+<div class="shrink-0">
+<div class="text-[#AEAEB2] dark:text-gray-500 flex size-7 items-center justify-center">
+<span class="material-symbols-outlined">chevron_left</span>
+</div>
+</div>
+</a>
+<hr class="border-t border-gray-200/80 dark:border-gray-700/80 ml-4 mr-14"/>
+<a class="flex items-center gap-4 px-4 min-h-[56px] justify-between active:bg-gray-100 dark:active:bg-gray-700/50" href="#">
+<div class="flex items-center gap-4 flex-1">
+<div class="text-[#111814] dark:text-gray-300 flex items-center justify-center rounded-lg shrink-0 size-10">
+<span class="material-symbols-outlined text-gray-500 dark:text-gray-400">support_agent</span>
+</div>
+<p class="text-[#111814] dark:text-gray-100 text-base font-medium leading-normal flex-1 truncate">اتصل بنا</p>
+</div>
+<div class="shrink-0">
+<div class="text-[#AEAEB2] dark:text-gray-500 flex size-7 items-center justify-center">
+<span class="material-symbols-outlined">chevron_left</span>
+</div>
+</div>
+</a>
+<hr class="border-t border-gray-200/80 dark:border-gray-700/80 ml-4 mr-14"/>
+<a class="flex items-center gap-4 px-4 min-h-[56px] justify-between active:bg-gray-100 dark:active:bg-gray-700/50" href="#">
+<div class="flex items-center gap-4 flex-1">
+<div class="text-[#111814] dark:text-gray-300 flex items-center justify-center rounded-lg shrink-0 size-10">
+<span class="material-symbols-outlined text-gray-500 dark:text-gray-400">gavel</span>
+</div>
+<p class="text-[#111814] dark:text-gray-100 text-base font-medium leading-normal flex-1 truncate">الشروط والأحكام</p>
+</div>
+<div class="shrink-0">
+<div class="text-[#AEAEB2] dark:text-gray-500 flex size-7 items-center justify-center">
+<span class="material-symbols-outlined">chevron_left</span>
+</div>
+</div>
+</a>
+<hr class="border-t border-gray-200/80 dark:border-gray-700/80 ml-4 mr-14"/>
+<a class="flex items-center gap-4 px-4 min-h-[56px] justify-between active:bg-gray-100 dark:active:bg-gray-700/50" href="#">
+<div class="flex items-center gap-4 flex-1">
+<div class="text-[#111814] dark:text-gray-300 flex items-center justify-center rounded-lg shrink-0 size-10">
+<span class="material-symbols-outlined text-gray-500 dark:text-gray-400">privacy_tip</span>
+</div>
+<p class="text-[#111814] dark:text-gray-100 text-base font-medium leading-normal flex-1 truncate">سياسة الخصوصية</p>
+</div>
+<div class="shrink-0">
+<div class="text-[#AEAEB2] dark:text-gray-500 flex size-7 items-center justify-center">
+<span class="material-symbols-outlined">chevron_left</span>
+</div>
+</div>
+</a>
+</div>
+</div>
+<div class="fixed bottom-0 left-0 right-0 z-20 h-24 border-t border-gray-200/80 bg-background-light/90 backdrop-blur-sm dark:border-gray-700/80 dark:bg-background-dark/90">
+<div class="flex h-full items-center justify-around px-2">
+<a class="flex flex-col items-center justify-center gap-1 text-gray-500 dark:text-gray-400" href="#">
+<span class="material-symbols-outlined">quiz</span>
+<span class="text-xs font-medium">الاختبارات</span>
+</a>
+<a class="flex flex-col items-center justify-center gap-1 text-gray-500 dark:text-gray-400" href="#">
+<span class="material-symbols-outlined">notifications</span>
+<span class="text-xs font-medium">الإشعارات</span>
+</a>
+<div class="relative -mt-10">
+<button class="flex size-16 items-center justify-center rounded-full bg-primary text-white shadow-lg">
+<span class="material-symbols-outlined text-3xl">add</span>
+</button>
+</div>
+<a class="flex flex-col items-center justify-center gap-1 text-primary dark:text-primary active" href="#">
+<span class="material-symbols-outlined">settings</span>
+<span class="text-xs font-bold">الإعدادات</span>
+</a>
+<a class="flex flex-col items-center justify-center gap-1 text-gray-500 dark:text-gray-400" href="#">
+<span class="material-symbols-outlined">home</span>
+<span class="text-xs font-medium">الرئيسية</span>
+</a>
+</div>
+</div>
+</div>
+
+</body></html>

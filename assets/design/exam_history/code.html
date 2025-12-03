@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html class="light" dir="rtl" lang="ar"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Exam History (Updated Tabs with Settings)</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<style>
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+    }
+  </style>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#006C35",
+            "background-light": "#F9FAFB",
+            "background-dark": "#0f172a",
+            "accent": "#C8A876",
+            "text-primary": "#1A1A1A",
+            "text-secondary": "#666666",
+            "text-tertiary": "#888888",
+            "card-light": "#FFFFFF",
+            "card-dark": "#1e293b",
+          },
+          fontFamily: {
+            "display": ["Noto Kufi Arabic", "sans-serif"]
+          },
+          borderRadius: {
+            "DEFAULT": "0.5rem",
+            "lg": "0.75rem",
+            "xl": "1rem",
+            "full": "9999px",
+          },
+          boxShadow: {
+            'subtle': '0 4px 12px rgba(0, 0, 0, 0.05)',
+            'subtle-dark': '0 4px 12px rgba(0, 0, 0, 0.2)',
+          }
+        },
+      },
+    }
+  </script>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+      background-color: #F9FAFB;
+    }
+    .dark body {
+      background-color: #0f172a;
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display">
+<div class="relative flex h-auto min-h-screen w-full flex-col group/design-root overflow-x-hidden pb-32">
+<header class="sticky top-0 z-10 flex h-16 w-full items-center justify-between border-b border-gray-200/80 bg-background-light/80 px-4 backdrop-blur-sm dark:border-slate-800/80 dark:bg-background-dark/80">
+<button class="flex size-10 items-center justify-center">
+<img alt="User Avatar" class="h-8 w-8 rounded-full object-cover ring-2 ring-gray-200 dark:ring-slate-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAbPb9rr7g2T4o8WlExUQnpih65YBGhfZTvjLHoxJvtUHDxL-Evh39xncqciUtvwQQ5ChcfUsQ-U_ovn5HfO-gVSZYB3xleBnK2H5UzxTkoIlzC_O8VzONBamfgJqxYIbMoqS2be2ufANmUodOq5e9UWu2tCZFeoB_bt2wijuNJxKrJIdvIFfZXmEo2nhJ72IjR63_gDzd1xtrtuqgRB8KvTa161ehnxDCsLdfmboQbJxKYOVw9UlY9FB6Y0tlSusgHi7cdBfUYWd4"/>
+</button>
+<h1 class="flex-1 text-center text-lg font-bold text-text-primary dark:text-gray-100">سجل الاختبارات</h1>
+<div class="flex size-10 items-center justify-center">
+</div>
+</header>
+<main class="flex flex-1 flex-col gap-4 p-4">
+<div class="flex w-full items-center justify-between gap-2 rounded-full bg-gray-200/50 p-1 dark:bg-slate-800">
+<button class="flex-1 rounded-full bg-primary px-4 py-2 text-sm font-semibold text-white shadow-sm">الكل</button>
+<button class="flex-1 rounded-full px-2 py-2 text-sm font-medium text-text-secondary dark:text-gray-400">قدرات متكامل</button>
+<button class="flex-1 rounded-full px-2 py-2 text-sm font-medium text-text-secondary dark:text-gray-400">تدريب لفظي/كمي</button>
+</div>
+<div class="flex flex-col items-stretch justify-start rounded-xl border border-gray-200/80 bg-card-light p-4 shadow-subtle dark:border-slate-800/50 dark:bg-card-dark dark:shadow-subtle-dark">
+<div class="flex flex-col gap-3">
+<div class="flex items-start justify-between">
+<div>
+<h2 class="text-lg font-bold text-text-primary dark:text-white">قدرات متكامل</h2>
+<p class="text-sm font-normal text-text-secondary dark:text-gray-400">نوع: قدرات متكامل</p>
+</div>
+<p class="text-sm font-normal text-text-secondary dark:text-gray-400">تاريخ: 12 مارس 2024</p>
+</div>
+<div class="flex justify-around gap-2 pt-2 pb-1">
+<div class="flex flex-col items-center justify-center rounded-lg bg-accent/10 p-2 text-center dark:bg-accent/20">
+<span class="text-xl font-bold text-accent">90%</span>
+<p class="text-xs font-semibold text-accent">كمي</p>
+</div>
+<div class="flex flex-col items-center justify-center rounded-lg bg-accent/10 p-2 text-center dark:bg-accent/20">
+<span class="text-xl font-bold text-accent">85%</span>
+<p class="text-xs font-semibold text-accent">لفظي</p>
+</div>
+<div class="flex flex-col items-center justify-center rounded-lg bg-primary/10 p-2 text-center dark:bg-primary/20">
+<span class="text-xl font-bold text-primary">88%</span>
+<p class="text-xs font-semibold text-primary">المتوسط</p>
+</div>
+</div>
+<div class="h-px w-full bg-gray-200 dark:bg-slate-700"></div>
+<div class="flex items-end justify-between gap-3 pt-3">
+<p class="flex-1 text-base font-medium text-text-tertiary dark:text-gray-300">أداء ممتاز في القسم الكمي، مع الحاجة لتحسين السرعة في القسم اللفظي.</p>
+</div>
+</div>
+</div>
+<div class="flex flex-col items-stretch justify-start rounded-xl border border-gray-200/80 bg-card-light p-4 shadow-subtle dark:border-slate-800/50 dark:bg-card-dark dark:shadow-subtle-dark">
+<div class="flex flex-col gap-3">
+<div class="flex items-start justify-between">
+<div>
+<h2 class="text-lg font-bold text-text-primary dark:text-white">تدريب كمي - العمليات الأساسية</h2>
+<p class="text-sm font-normal text-text-secondary dark:text-gray-400">نوع: تدريب كمي</p>
+</div>
+<p class="text-sm font-normal text-text-secondary dark:text-gray-400">تاريخ: 10 مارس 2024</p>
+</div>
+<div class="h-px w-full bg-gray-200 dark:bg-slate-700"></div>
+<div class="flex items-end justify-between gap-3">
+<p class="flex-1 text-base font-medium text-text-tertiary dark:text-gray-300">أداء جيد في القسمة والضرب.</p>
+<div class="flex shrink-0 flex-col items-center justify-center rounded-lg bg-primary/10 p-2 dark:bg-primary/20">
+<span class="text-xl font-bold text-primary">75%</span>
+<p class="text-xs font-semibold text-primary">النتيجة</p>
+</div>
+</div>
+</div>
+</div>
+<div class="flex flex-col items-stretch justify-start rounded-xl border border-gray-200/80 bg-card-light p-4 shadow-subtle dark:border-slate-800/50 dark:bg-card-dark dark:shadow-subtle-dark">
+<div class="flex flex-col gap-3">
+<div class="flex items-start justify-between">
+<div>
+<h2 class="text-lg font-bold text-text-primary dark:text-white">تدريب لفظي - استيعاب المقروء</h2>
+<p class="text-sm font-normal text-text-secondary dark:text-gray-400">نوع: تدريب لفظي</p>
+</div>
+<p class="text-sm font-normal text-text-secondary dark:text-gray-400">تاريخ: 5 مارس 2024</p>
+</div>
+<div class="h-px w-full bg-gray-200 dark:bg-slate-700"></div>
+<div class="flex items-end justify-between gap-3">
+<p class="flex-1 text-base font-medium text-text-tertiary dark:text-gray-300">فهم ممتاز للسياق العام للنصوص.</p>
+<div class="flex shrink-0 flex-col items-center justify-center rounded-lg bg-accent/10 p-2 dark:bg-accent/20">
+<span class="text-xl font-bold text-accent">92%</span>
+<p class="text-xs font-semibold text-accent">النتيجة</p>
+</div>
+</div>
+</div>
+</div>
+</main>
+<nav class="fixed bottom-0 left-0 right-0 z-10 border-t border-gray-200/80 bg-background-light/95 backdrop-blur-sm dark:border-slate-800/80 dark:bg-background-dark/95">
+<div class="mx-auto flex h-20 max-w-md items-center justify-around px-2">
+<a class="flex flex-1 flex-col items-center justify-center gap-1 text-text-secondary dark:text-gray-400" href="#">
+<span class="material-symbols-outlined text-2xl">home</span>
+<span class="text-xs">الرئيسية</span>
+</a>
+<a class="flex flex-1 flex-col items-center justify-center gap-1 text-text-secondary dark:text-gray-400" href="#">
+<span class="material-symbols-outlined text-2xl">settings</span>
+<span class="text-xs">الإعدادات</span>
+</a>
+<div class="flex-1">
+<div class="relative flex items-center justify-center">
+<button class="-mt-8 flex size-16 items-center justify-center rounded-full bg-primary text-white shadow-lg">
+<span class="material-symbols-outlined text-4xl">add</span>
+</button>
+</div>
+</div>
+<a class="flex flex-1 flex-col items-center justify-center gap-1 text-text-secondary dark:text-gray-400" href="#">
+<span class="material-symbols-outlined text-2xl">notifications</span>
+<span class="text-xs">الإشعارات</span>
+</a>
+<a class="flex flex-1 flex-col items-center justify-center gap-1 font-bold text-primary dark:text-primary" href="#">
+<span class="material-symbols-outlined text-2xl" style="font-variation-settings: 'FILL' 1">quiz</span>
+<span class="text-xs">الاختبارات</span>
+</a>
+</div>
+</nav>
+</div>
+
+</body></html>

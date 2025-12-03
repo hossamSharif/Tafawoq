@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+
+<html class="light" dir="rtl" lang="ar"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Sign Up Page</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>
+      body {
+        font-family: 'Noto Kufi Arabic', sans-serif;
+      }
+      .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      }
+    </style>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "primary": "#006C35",
+              "background-light": "#f7f7f7",
+              "background-dark": "#102218",
+              "text-light": "#2C2C2C",
+              "text-dark": "#f5f8f7",
+              "border-light": "#D1D1D1",
+              "border-dark": "#4a5568",
+              "placeholder-light": "#a0aec0",
+              "placeholder-dark": "#718096"
+            },
+            fontFamily: {
+              "display": ["Noto Kufi Arabic", "sans-serif"]
+            },
+            borderRadius: {"DEFAULT": "0.5rem", "lg": "0.75rem", "xl": "1rem", "full": "9999px"},
+            boxShadow: {
+              'subtle': '0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03)',
+            }
+          },
+        },
+      }
+    </script>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="font-display">
+<div class="relative flex h-auto min-h-screen w-full flex-col items-center bg-background-light dark:bg-background-dark group/design-root overflow-x-hidden p-4">
+<div class="flex w-full max-w-md flex-col items-center pt-10 pb-8">
+<div class="flex flex-col items-center justify-center gap-2 pb-8">
+<svg fill="none" height="48" viewbox="0 0 48 48" width="48" xmlns="http://www.w3.org/2000/svg">
+<path d="M24 4C12.96 4 4 12.96 4 24C4 35.04 12.96 44 24 44C35.04 44 44 35.04 44 24C44 12.96 35.04 4 24 4ZM24 38C16.28 38 10 31.72 10 24C10 16.28 16.28 10 24 10C31.72 10 38 16.28 38 24C38 31.72 31.72 38 24 38Z" fill="#006C35"></path>
+<path d="M22 28L32 20L22 12V28Z" fill="#006C35"></path>
+</svg>
+<h1 class="text-text-light dark:text-text-dark text-3xl font-bold tracking-tight">تـفــوق</h1>
+</div>
+<h1 class="text-text-light dark:text-text-dark tracking-light text-[32px] font-bold leading-tight text-center pb-8 pt-6">إنشاء حساب</h1>
+<form class="w-full space-y-6">
+<div class="flex w-full flex-wrap items-end">
+<label class="flex w-full flex-col">
+<p class="text-text-light dark:text-text-dark text-base font-medium leading-normal pb-2">اسم المستخدم</p>
+<input class="form-input shadow-subtle flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-text-light dark:text-text-dark focus:outline-0 focus:ring-2 focus:ring-primary/50 border border-border-light dark:border-border-dark bg-white dark:bg-background-dark h-14 placeholder:text-placeholder-light dark:placeholder:text-placeholder-dark p-4 text-base font-normal leading-normal" placeholder="أدخل اسم المستخدم"/>
+</label>
+</div>
+<div class="flex w-full flex-wrap items-end">
+<label class="flex w-full flex-col">
+<p class="text-text-light dark:text-text-dark text-base font-medium leading-normal pb-2">البريد الإلكتروني</p>
+<input class="form-input shadow-subtle flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-text-light dark:text-text-dark focus:outline-0 focus:ring-2 focus:ring-primary/50 border border-border-light dark:border-border-dark bg-white dark:bg-background-dark h-14 placeholder:text-placeholder-light dark:placeholder:text-placeholder-dark p-4 text-base font-normal leading-normal" placeholder="أدخل بريدك الإلكتروني" type="email"/>
+</label>
+</div>
+<div class="flex w-full flex-wrap items-end">
+<label class="flex w-full flex-col">
+<p class="text-text-light dark:text-text-dark text-base font-medium leading-normal pb-2">كلمة المرور</p>
+<div class="relative flex w-full flex-1 items-stretch">
+<input class="form-input shadow-subtle flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-text-light dark:text-text-dark focus:outline-0 focus:ring-2 focus:ring-primary/50 border border-border-light dark:border-border-dark bg-white dark:bg-background-dark h-14 placeholder:text-placeholder-light dark:placeholder:text-placeholder-dark p-4 text-base font-normal leading-normal" placeholder="أدخل كلمة المرور" type="password"/>
+<div class="absolute inset-y-0 left-0 flex items-center pr-3 pl-3 text-gray-500">
+<span class="material-symbols-outlined text-border-light dark:text-border-dark">visibility_off</span>
+</div>
+</div>
+</label>
+</div>
+</form>
+<div class="relative flex w-full items-center justify-center py-8">
+<div class="absolute h-px w-full bg-border-light dark:bg-border-dark"></div>
+<p class="relative bg-background-light dark:bg-background-dark px-4 text-base font-normal leading-normal text-text-light dark:text-text-dark">أو</p>
+</div>
+<div class="flex w-full flex-col space-y-4">
+<button class="flex h-14 w-full items-center justify-center gap-3 rounded-lg border border-border-light dark:border-border-dark bg-white dark:bg-background-dark px-4 py-3 text-base font-medium text-text-light dark:text-text-dark shadow-subtle transition-colors hover:bg-gray-50 dark:hover:bg-gray-800">
+<img alt="Google logo" class="h-6 w-6" data-alt="Google logo" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBLjHDjtHIzhTqH5bUnlDI97s9weds8KHipw_g4h94IvkrVciS1cTYDB-qoPtW2J5FjUkutZ9M5hUGchJhYhcHvA97IFU0f3gW617vVRgpuOJ1_w3iBZxzsfvkVzdL54vWKuBzduiLDqpWCMSOgIAOcAn3xiL4K2kz0zInHDfrfm1-1m_nvdDhCVFJpmebTqhz1Xwf_6eszVpE-0IqDDhi__JR3wdEPwz5Yht3Tk3jTrZIjk7T7bu0rgj0G2K3kko2X2H-FRrgHyYA"/>
+<span>التسجيل باستخدام جوجل</span>
+</button>
+<button class="flex h-14 w-full items-center justify-center gap-3 rounded-lg border border-border-light dark:border-border-dark bg-white dark:bg-background-dark px-4 py-3 text-base font-medium text-text-light dark:text-text-dark shadow-subtle transition-colors hover:bg-gray-50 dark:hover:bg-gray-800">
+<img alt="Apple logo" class="h-6 w-6 dark:invert" data-alt="Apple logo" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBHI52qbxe9ba8yzNau9pJ2schAeJaVvN3usfKw1VxZO6b_CuShHVRPtg7XjAuu7Yf2QLWxT2Y50fzrPJmMwBvmNMigKLafMwo1u3eLUpfHhQsw2Ku_BEPV8MCdc6Mj3FBjdaozqp493l7j8k-LHV1oIGFQD0CmG9ROsPEgHnthx58aRIy4TY_zMIXOMdPrTkadfxkoODFO1y7s3QtBPy3M7BU0QLoiNdAd-ZdvFsWC9CssPD0gc_L0tu6SxhuXygHKXrWfsBGyEtE"/>
+<span>التسجيل باستخدام أبل</span>
+</button>
+</div>
+<div class="flex w-full flex-col items-center pt-8">
+<button class="flex h-14 w-full items-center justify-center rounded-lg bg-primary px-6 py-3 text-base font-bold text-white shadow-lg shadow-primary/30 transition-colors hover:bg-primary/90">تسجيل</button>
+<p class="pt-6 text-center text-sm text-text-light dark:text-text-dark">
+                    لديك حساب بالفعل؟ <a class="font-bold text-primary hover:underline" href="#">تسجيل الدخول</a>
+</p>
+</div>
+</div>
+</div>
+</body></html>

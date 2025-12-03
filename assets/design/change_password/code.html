@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+
+<html class="light" dir="rtl" lang="ar"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Change Password</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&amp;family=Noto+Kufi+Arabic:wght@100..900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "primary": "#006C35",
+              "background-light": "#F9F9F9",
+              "background-dark": "#101814",
+              "text-light": "#333333",
+              "text-dark": "#E0E0E0",
+              "placeholder-light": "#CCCCCC",
+              "placeholder-dark": "#555555",
+              "border-light": "#E0E0E0",
+              "border-dark": "#444444",
+              "error": "#E53935",
+            },
+            fontFamily: {
+              "display": ["Noto Kufi Arabic", "Manrope", "sans-serif"]
+            },
+            borderRadius: {
+              "DEFAULT": "0.75rem",
+              "lg": "1rem",
+              "xl": "1.5rem",
+              "full": "9999px"
+            },
+            boxShadow: {
+                'subtle': '0 4px 12px 0 rgba(0, 0, 0, 0.05)',
+            }
+          },
+        },
+      }
+    </script>
+<style>
+      .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="font-display">
+<div class="relative flex h-screen min-h-screen w-full flex-col bg-background-light dark:bg-background-dark group/design-root overflow-x-hidden">
+<!-- Top App Bar -->
+<header class="flex shrink-0 items-center justify-between p-4 bg-background-light dark:bg-background-dark sticky top-0 z-10">
+<div class="flex size-10 items-center justify-center">
+<!-- Placeholder for potential left-side action -->
+</div>
+<h1 class="flex-1 text-center text-lg font-bold text-text-light dark:text-text-dark">تغيير كلمة المرور</h1>
+<button class="flex size-10 shrink-0 items-center justify-center rounded-full text-text-light dark:text-text-dark">
+<span class="material-symbols-outlined text-3xl">arrow_forward</span>
+</button>
+</header>
+<!-- Main Content -->
+<main class="flex flex-1 flex-col px-4 pt-6 pb-4">
+<div class="flex flex-col space-y-6">
+<!-- Current Password Field -->
+<div class="flex flex-col">
+<label class="mb-2 text-base font-medium text-text-light dark:text-text-dark" for="current-password">كلمة المرور الحالية</label>
+<div class="relative flex w-full items-stretch">
+<input class="form-input h-14 w-full flex-1 resize-none overflow-hidden rounded-lg border border-border-light bg-white p-4 pr-12 text-base text-text-light placeholder:text-placeholder-light focus:border-primary focus:ring-1 focus:ring-primary dark:border-border-dark dark:bg-background-dark dark:text-text-dark dark:placeholder:text-placeholder-dark dark:focus:border-primary" id="current-password" placeholder="أدخل كلمة المرور الحالية" type="password" value=""/>
+<div class="absolute inset-y-0 right-0 flex items-center pr-4 text-placeholder-light dark:text-placeholder-dark">
+<span class="material-symbols-outlined cursor-pointer">visibility</span>
+</div>
+</div>
+</div>
+<!-- New Password Field -->
+<div class="flex flex-col">
+<label class="mb-2 text-base font-medium text-text-light dark:text-text-dark" for="new-password">كلمة المرور الجديدة</label>
+<div class="relative flex w-full items-stretch">
+<input class="form-input h-14 w-full flex-1 resize-none overflow-hidden rounded-lg border border-border-light bg-white p-4 pr-12 text-base text-text-light placeholder:text-placeholder-light focus:border-primary focus:ring-1 focus:ring-primary dark:border-border-dark dark:bg-background-dark dark:text-text-dark dark:placeholder:text-placeholder-dark dark:focus:border-primary" id="new-password" placeholder="أدخل كلمة المرور الجديدة" type="password" value=""/>
+<div class="absolute inset-y-0 right-0 flex items-center pr-4 text-placeholder-light dark:text-placeholder-dark">
+<span class="material-symbols-outlined cursor-pointer">visibility</span>
+</div>
+</div>
+<p class="pt-2 text-sm font-normal text-text-light/70 dark:text-text-dark/70">8 أحرف على الأقل</p>
+</div>
+<!-- Confirm New Password Field with Error State Example -->
+<div class="flex flex-col">
+<label class="mb-2 text-base font-medium text-text-light dark:text-text-dark" for="confirm-password">تأكيد كلمة المرور الجديدة</label>
+<div class="relative flex w-full items-stretch">
+<input class="form-input h-14 w-full flex-1 resize-none overflow-hidden rounded-lg border bg-white p-4 pr-12 text-base placeholder:text-placeholder-light focus:ring-1 border-error text-error focus:border-error focus:ring-error dark:border-error dark:bg-background-dark dark:text-error dark:placeholder:text-placeholder-dark dark:focus:border-error dark:focus:ring-error" id="confirm-password" placeholder="أعد إدخال كلمة المرور الجديدة" type="password" value=""/>
+<div class="absolute inset-y-0 right-0 flex items-center pr-4 text-placeholder-light dark:text-placeholder-dark">
+<span class="material-symbols-outlined cursor-pointer">visibility</span>
+</div>
+</div>
+<p class="pt-2 text-sm font-normal text-error">كلمتا المرور غير متطابقتين</p>
+</div>
+</div>
+</main>
+<!-- Footer with Action Button -->
+<footer class="mt-auto px-4 pb-8 pt-4">
+<button class="flex h-14 w-full items-center justify-center rounded-lg bg-primary text-base font-bold text-white shadow-subtle transition-opacity hover:opacity-90 active:opacity-80 disabled:opacity-50">
+                حفظ التغييرات
+            </button>
+</footer>
+</div>
+</body></html>

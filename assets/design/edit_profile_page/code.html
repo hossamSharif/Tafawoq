@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html class="light" dir="rtl" lang="ar"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Edit Profile Page</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>
+      body {
+        font-family: 'Noto Kufi Arabic', sans-serif;
+      }
+      .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      }
+    </style>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "primary": "#006C35",
+              "background-light": "#F9FAFB",
+              "background-dark": "#111827",
+            },
+            fontFamily: {
+              "display": ["Noto Kufi Arabic", "sans-serif"]
+            },
+            borderRadius: {"DEFAULT": "0.5rem", "lg": "1rem", "xl": "1.5rem", "full": "9999px"},
+            boxShadow: {
+              'soft': '0 4px 6px -1px rgb(0 0 0 / 0.05), 0 2px 4px -2px rgb(0 0 0 / 0.05)',
+            }
+          },
+        },
+      }
+    </script>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="font-display">
+<div class="relative flex h-auto min-h-screen w-full flex-col bg-background-light dark:bg-background-dark group/design-root overflow-x-hidden">
+<div class="sticky top-0 z-10 flex h-16 items-center border-b border-gray-200 dark:border-gray-700 bg-background-light dark:bg-background-dark px-4 justify-between shadow-sm">
+<div class="flex-1"></div>
+<h1 class="text-lg font-bold text-gray-900 dark:text-gray-100 flex-1 text-center">تعديل الملف الشخصي</h1>
+<div class="flex flex-1 justify-end">
+<button class="text-gray-800 dark:text-gray-200 flex size-10 shrink-0 items-center justify-center rounded-full hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors">
+<span class="material-symbols-outlined text-2xl">arrow_forward</span>
+</button>
+</div>
+</div>
+<main class="flex-grow pb-28">
+<div class="flex p-6 @container">
+<div class="flex w-full flex-col items-center gap-4">
+<div class="relative">
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full min-h-32 w-32 border-4 border-white dark:border-gray-800 shadow-md" data-alt="User's profile picture" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuA40hIlrLMnXIh1fpCUpGv9ZKW_6TcPCVu-KgfeRPbrwCt5j99M0p_sq0zEGbi9juYhpM2J-nkGGPbQA1WF3b8f73g4Mk3OGMuDCnoEvKsgrnaIVlCp6oqw_yeSMp0bJPICbQIOMBL5tJXWyTSaxJFOvx_Q6PU3lNMDGkDs34lC5UEUMi-HGEYWmuIPjbFMrDlc7kM94MKefvHb5ln6brXKRMdbnvtQ7xm0At1oaIfORTQGxqL5W28raoUwsbiWzUXFh8w6R00XPBo");'></div>
+<div class="absolute bottom-0 right-0 flex h-8 w-8 items-center justify-center rounded-full bg-primary text-white shadow-md">
+<span class="material-symbols-outlined text-lg">edit</span>
+</div>
+</div>
+<p class="text-primary text-lg font-bold leading-tight tracking-[-0.015em] text-center cursor-pointer">تغيير صورة الملف الشخصي</p>
+</div>
+</div>
+<div class="flex flex-col gap-6 px-4">
+<div class="flex flex-col w-full">
+<p class="text-gray-700 dark:text-gray-300 text-base font-medium leading-normal pb-2 pr-2">اسم المستخدم</p>
+<input class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-xl text-gray-900 dark:text-gray-100 focus:outline-0 focus:ring-2 focus:ring-primary/50 border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-800 focus:border-primary h-14 placeholder:text-gray-400 dark:placeholder:text-gray-500 p-4 text-base font-normal leading-normal shadow-sm" value="فاطمة الزهراء"/>
+</div>
+<div class="flex flex-col w-full gap-2">
+<p class="text-gray-700 dark:text-gray-300 text-base font-medium leading-normal pr-2">الفئة الأكاديمية</p>
+<div class="grid grid-cols-2 gap-4">
+<button class="flex flex-col items-center justify-center gap-3 p-4 rounded-xl shadow-soft transition-all duration-200 ease-in-out border-2 bg-primary border-primary text-white">
+<span class="material-symbols-outlined text-4xl">science</span>
+<span class="font-semibold text-base">مسار علمي</span>
+</button>
+<button class="flex flex-col items-center justify-center gap-3 p-4 rounded-xl shadow-soft transition-all duration-200 ease-in-out border-2 bg-white dark:bg-gray-800 border-gray-200 dark:border-gray-700 text-gray-700 dark:text-gray-300 hover:border-primary/50 dark:hover:border-primary/50">
+<span class="material-symbols-outlined text-4xl">menu_book</span>
+<span class="font-semibold text-base">مسار أدبي</span>
+</button>
+</div>
+</div>
+</div>
+</main>
+<div class="fixed bottom-0 left-0 right-0 bg-background-light dark:bg-background-dark p-4 border-t border-gray-200 dark:border-gray-700">
+<button class="w-full h-14 flex items-center justify-center rounded-xl bg-primary text-white text-lg font-bold shadow-lg hover:bg-primary/90 transition-colors focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 dark:focus:ring-offset-background-dark">حفظ التغييرات</button>
+</div>
+</div>
+
+</body></html>

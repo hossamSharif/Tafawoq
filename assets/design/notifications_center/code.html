@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html class="light" dir="rtl" lang="ar"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Notifications Center</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>
+      .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      }
+    </style>
+<script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "saudi-deep-green": "#046c3e",
+              "muted-gold": "#c5a66a",
+              "clean-white": "#ffffff",
+              "light-grey": "#f9fafb",
+              "dark-text": "#111813",
+              "light-text": "#61896f",
+            },
+            fontFamily: {
+              "display": ["Noto Kufi Arabic", "sans-serif"]
+            },
+            borderRadius: {"DEFAULT": "0.5rem", "lg": "1rem", "xl": "1.5rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="font-display">
+<div class="relative mx-auto flex h-auto min-h-screen w-full max-w-md flex-col bg-light-grey dark:bg-zinc-900 group/design-root overflow-x-hidden">
+<div class="sticky top-0 z-10 flex w-full flex-col bg-light-grey/80 dark:bg-zinc-900/80 backdrop-blur-sm">
+<div class="flex items-center p-4 pb-3 justify-between">
+<div class="flex size-12 shrink-0 items-center justify-start">
+<button class="size-10 rounded-full">
+<img alt="User Avatar" class="h-full w-full rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBiVRlDJCef3GDm1UhTNAbh0v1dsSts6GpiKFhIR1joVKO2IREAbSrFBSBWfGapUdu7EdUaf_n_0KZq82Ne4CZIbq47J3nf459ZOAqC2XMtIr-Ou3oev_cSKkT1yjdM2moi3dsMduwXWOu-ylo4zyOwtK-w8F26Klu1_FFSVLxBtsPvkjkv7fLDwodXginI2DC5PodfvMIQZ5siKHj1NYt9mlk19dusxMMg2UyZHED88t5jGTZ8mDv_4CpptFqssgrxsSg5WE6NexU"/>
+</button>
+</div>
+<h1 class="text-dark-text dark:text-clean-white text-lg font-bold leading-tight tracking-[-0.015em] flex-1 text-center">مركز الإشعارات</h1>
+<div class="flex w-auto items-center justify-end">
+<p class="text-saudi-deep-green dark:text-saudi-deep-green/80 text-sm font-bold leading-normal tracking-[0.015em] shrink-0 whitespace-nowrap">الكل مقروء</p>
+</div>
+</div>
+</div>
+<div class="flex flex-1 flex-col gap-4 p-4">
+<a class="flex cursor-pointer flex-col gap-3 rounded-xl bg-clean-white dark:bg-zinc-800 p-4 shadow-sm" href="#">
+<div class="flex items-start justify-between gap-4">
+<div class="flex items-start gap-4">
+<div class="text-dark-text dark:text-clean-white flex size-12 shrink-0 items-center justify-center rounded-lg bg-light-grey dark:bg-zinc-700">
+<span class="material-symbols-outlined text-2xl">tips_and_updates</span>
+</div>
+<div class="flex flex-col justify-center pt-1">
+<p class="text-dark-text dark:text-clean-white text-base font-medium leading-tight">توصية: تدرب على الجبر والهندسة لتحسين أدائك.</p>
+</div>
+</div>
+<div class="shrink-0 pt-1">
+<div class="flex size-7 items-center justify-center">
+<div class="size-2.5 rounded-full bg-saudi-deep-green"></div>
+</div>
+</div>
+</div>
+<div class="flex justify-end">
+<p class="text-light-text dark:text-zinc-400 text-sm font-normal leading-normal">منذ 5 دقائق</p>
+</div>
+</a>
+<a class="flex cursor-pointer flex-col gap-3 rounded-xl bg-clean-white dark:bg-zinc-800 p-4 shadow-sm" href="#">
+<div class="flex items-start justify-between gap-4">
+<div class="flex items-start gap-4">
+<div class="text-dark-text dark:text-clean-white flex size-12 shrink-0 items-center justify-center rounded-lg bg-light-grey dark:bg-zinc-700">
+<span class="material-symbols-outlined text-2xl">workspace_premium</span>
+</div>
+<div class="flex flex-col justify-center pt-1">
+<p class="text-dark-text dark:text-clean-white text-base font-medium leading-tight">طور حسابك إلى الخطة المميزة لميزات أكثر!</p>
+</div>
+</div>
+<div class="shrink-0 pt-1">
+<div class="flex size-7 items-center justify-center">
+<div class="size-2.5 rounded-full bg-saudi-deep-green"></div>
+</div>
+</div>
+</div>
+<div class="flex justify-end">
+<p class="text-light-text dark:text-zinc-400 text-sm font-normal leading-normal">منذ 30 دقيقة</p>
+</div>
+</a>
+<a class="flex cursor-pointer flex-col gap-3 rounded-xl bg-clean-white dark:bg-zinc-800 p-4 shadow-sm" href="#">
+<div class="flex items-start justify-between gap-4">
+<div class="flex items-start gap-4">
+<div class="text-dark-text dark:text-clean-white flex size-12 shrink-0 items-center justify-center rounded-lg bg-light-grey dark:bg-zinc-700">
+<span class="material-symbols-outlined text-2xl">emoji_events</span>
+</div>
+<div class="flex flex-col justify-center pt-1">
+<p class="text-dark-text dark:text-clean-white text-base font-medium leading-tight">حسّن درجاتك! ابدأ امتحان قدرات متكامل الآن.</p>
+</div>
+</div>
+</div>
+<div class="flex justify-end">
+<p class="text-light-text dark:text-zinc-400 text-sm font-normal leading-normal">منذ ساعة</p>
+</div>
+</a>
+</div>
+<div class="sticky bottom-0 z-10 mt-auto flex h-24 w-full items-center border-t border-zinc-200 bg-clean-white/80 dark:border-zinc-700 dark:bg-zinc-800/80 backdrop-blur-sm">
+<div class="flex h-full w-full items-center justify-around">
+<a class="flex flex-col items-center gap-1 text-zinc-500 dark:text-zinc-400 w-1/5 pt-2" href="#">
+<span class="material-symbols-outlined text-2xl">home</span>
+<span class="text-xs">الرئيسية</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-zinc-500 dark:text-zinc-400 w-1/5 pt-2" href="#">
+<span class="material-symbols-outlined text-2xl">settings</span>
+<span class="text-xs">الإعدادات</span>
+</a>
+<div class="w-1/5">
+<div class="relative -top-8 flex justify-center">
+<button class="flex size-16 items-center justify-center rounded-full bg-saudi-deep-green text-clean-white shadow-lg">
+<span class="material-symbols-outlined text-4xl">add</span>
+</button>
+</div>
+</div>
+<a class="flex flex-col items-center gap-1 text-saudi-deep-green dark:text-saudi-deep-green w-1/5 pt-2" href="#">
+<span class="material-symbols-outlined text-2xl" style="font-variation-settings: 'FILL' 1;">notifications</span>
+<span class="text-xs font-bold">الإشعارات</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-zinc-500 dark:text-zinc-400 w-1/5 pt-2" href="#">
+<span class="material-symbols-outlined text-2xl">quiz</span>
+<span class="text-xs">الاختبارات</span>
+</a>
+</div>
+</div>
+</div>
+
+</body></html>

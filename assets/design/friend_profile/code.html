@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html class="light" dir="rtl" lang="ar"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>My Performance Overview</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;500;700&amp;family=Noto+Kufi+Arabic:wght@400;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<style type="text/tailwindcss">
+    @tailwind base;
+    @tailwind components;
+    @tailwind utilities;
+    :root {
+      --muted-gold: #C0A062;
+    }
+    .radial-chart {
+      position: relative;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 80px;
+      height: 80px;
+    }
+    .radial-chart-track,
+    .radial-chart-progress {
+      fill: none;
+      stroke-width: 8;
+    }
+    .radial-chart-track {
+      stroke: #E5E7EB;}
+    .dark .radial-chart-track {
+        stroke: #4B5563;}
+    .radial-chart-progress {
+      stroke: var(--muted-gold);
+      stroke-linecap: round;
+      transform: rotate(-90deg);
+      transform-origin: 50% 50%;
+      transition: stroke-dashoffset 0.5s ease-in-out;
+    }
+    .radial-chart-text {
+      position: absolute;
+      font-size: 1.125rem;font-weight: 700;
+    }
+  </style>
+<style>
+      .material-symbols-outlined {
+        font-variation-settings:
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 24
+      }
+    </style>
+<script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "primary": "#006C35",
+              "background-light": "#F9FAFB",
+              "background-dark": "#0f2319",
+              "card-light": "#FFFFFF",
+              "card-dark": "#182E23",
+              "text-primary-light": "#333333",
+              "text-primary-dark": "#F0F0F0",
+              "text-secondary-light": "#888888",
+              "text-secondary-dark": "#A0A0A0",
+              "muted-gold": "var(--muted-gold)"
+            },
+            fontFamily: {
+              "display": ["Lexend", "sans-serif"],
+              "heading": ["Noto Kufi Arabic", "sans-serif"]
+            },
+            borderRadius: {"DEFAULT": "0.5rem", "lg": "1rem", "xl": "1.5rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display text-text-primary-light dark:text-text-primary-dark">
+<div class="relative flex h-auto min-h-screen w-full flex-col group/design-root overflow-x-hidden">
+<header class="sticky top-0 z-10 flex h-16 items-center bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-sm px-4 justify-between">
+<div class="flex w-12 items-center justify-start">
+<button class="flex items-center justify-center rounded-full h-10 w-10 text-text-primary-light dark:text-text-primary-dark">
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full h-10 w-10" data-alt="User avatar" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAvXIW61nZEuy_R73tyoKPl33-ZwhmOdahpb26f7dAK_TfvjoBGlBV-x8Pxnpc9xCqosCFTzqIgSk1yWmfl0XAy-ZoH9BLSBwIcAPHkpM-w6l0af0MnMqNMOL-lEBlJuUceqOwep8W2ZMjIV_5zXPyXvOLPd9CVFPTvile1trjCBWGPJg-6vDNf2GGB2Jur7Wk67bjYOYrOf1tbC4hF7N2gxg3mMpZSHbhJEnFtfVl6lBuhcNDB8dCU_p6TZWn7FOrVDd34-tvZXVw");'></div>
+</button>
+</div>
+<h1 class="text-lg font-bold font-heading text-text-primary-light dark:text-text-primary-dark">نظرة عامة على أدائي</h1>
+<div class="flex w-12 items-center justify-end">
+</div>
+</header>
+<main class="flex-grow pb-28 p-4">
+<div class="mb-4 rounded-xl bg-card-light dark:bg-card-dark p-6 shadow-sm">
+<div class="flex justify-between items-start">
+<div>
+<h2 class="font-heading text-lg font-bold text-text-primary-light dark:text-text-primary-dark">اسم المستخدم</h2>
+<div class="mt-4 space-y-2 text-sm text-text-secondary-light dark:text-text-secondary-dark font-heading">
+<p><span class="font-medium text-text-primary-light dark:text-text-primary-dark">المستوى الدراسي:</span> ثانوي</p>
+<p><span class="font-medium text-text-primary-light dark:text-text-primary-dark">الصف:</span> الثاني ثانوي</p>
+<p><span class="font-medium text-text-primary-light dark:text-text-primary-dark">الفئة الأكاديمية:</span> علمي</p>
+</div>
+</div>
+<button class="flex items-center gap-2 rounded-full bg-gray-100 dark:bg-gray-700 px-4 py-2 text-sm font-medium text-primary dark:text-primary">
+<span class="material-symbols-outlined text-base">edit</span>
+<span>تعديل</span>
+</button>
+</div>
+</div>
+<div class="mb-4 rounded-xl bg-card-light dark:bg-card-dark p-6 shadow-sm">
+<div class="flex justify-around items-center text-center">
+<div class="flex flex-col items-center gap-2">
+<div class="radial-chart">
+<svg class="h-full w-full" viewBox="0 0 100 100">
+<circle class="radial-chart-track" cx="50" cy="50" r="45"></circle>
+<circle class="radial-chart-progress" cx="50" cy="50" r="45" stroke-dasharray="282.74" stroke-dashoffset="56.55" style="--value: 80;"></circle>
+</svg>
+<span class="radial-chart-text text-text-primary-light dark:text-text-primary-dark">80%</span>
+</div>
+<p class="font-heading text-sm font-medium text-text-secondary-light dark:text-text-secondary-dark">كمي</p>
+</div>
+<div class="flex flex-col items-center gap-2">
+<div class="radial-chart">
+<svg class="h-full w-full" viewBox="0 0 100 100">
+<circle class="radial-chart-track" cx="50" cy="50" r="45"></circle>
+<circle class="radial-chart-progress" cx="50" cy="50" r="45" stroke-dasharray="282.74" stroke-dashoffset="36.75" style="--value: 87;"></circle>
+</svg>
+<span class="radial-chart-text text-text-primary-light dark:text-text-primary-dark">87%</span>
+</div>
+<p class="font-heading text-sm font-medium text-text-secondary-light dark:text-text-secondary-dark">لفظي</p>
+</div>
+<div class="flex flex-col items-center gap-2">
+<div class="radial-chart">
+<svg class="h-full w-full" viewBox="0 0 100 100">
+<circle class="radial-chart-track" cx="50" cy="50" r="45"></circle>
+<circle class="radial-chart-progress" cx="50" cy="50" r="45" stroke-dasharray="282.74" stroke-dashoffset="45.24" style="--value: 84;"></circle>
+</svg>
+<span class="radial-chart-text text-text-primary-light dark:text-text-primary-dark">84%</span>
+</div>
+<p class="font-heading text-sm font-medium text-text-secondary-light dark:text-text-secondary-dark">المتوسط</p>
+</div>
+</div>
+</div>
+<div class="mb-4 rounded-xl bg-card-light dark:bg-card-dark p-6 shadow-sm flex items-center justify-between">
+<div>
+<h2 class="font-heading text-base font-medium text-text-secondary-light dark:text-text-secondary-dark">ساعات التدريب المخصص</h2>
+<p class="font-heading text-4xl font-bold text-text-primary-light dark:text-text-primary-dark mt-1">42 <span class="text-lg font-medium">ساعة</span></p>
+</div>
+<span class="material-symbols-outlined text-4xl text-muted-gold">schedule</span>
+</div>
+<div class="rounded-xl bg-card-light dark:bg-card-dark p-6 shadow-sm">
+<h2 class="font-heading text-lg font-bold text-text-primary-light dark:text-text-primary-dark mb-4">نقاط القوة</h2>
+<div class="flex flex-wrap gap-3">
+<div class="flex items-center gap-2 rounded-full bg-primary/10 px-4 py-2">
+<span class="material-symbols-outlined text-primary text-base">check_circle</span>
+<p class="text-sm font-medium text-primary">العمليات الأساسية</p>
+</div>
+<div class="flex items-center gap-2 rounded-full bg-primary/10 px-4 py-2">
+<span class="material-symbols-outlined text-primary text-base">check_circle</span>
+<p class="text-sm font-medium text-primary">التناظر اللفظي</p>
+</div>
+<div class="flex items-center gap-2 rounded-full bg-primary/10 px-4 py-2">
+<span class="material-symbols-outlined text-primary text-base">check_circle</span>
+<p class="text-sm font-medium text-primary">هندسة</p>
+</div>
+<div class="flex items-center gap-2 rounded-full bg-primary/10 px-4 py-2">
+<span class="material-symbols-outlined text-primary text-base">check_circle</span>
+<p class="text-sm font-medium text-primary">إكمال الجمل</p>
+</div>
+</div>
+</div>
+</main>
+<footer class="fixed bottom-0 left-0 right-0 z-20 border-t border-gray-200 bg-background-light/90 dark:border-gray-700 dark:bg-background-dark/90 backdrop-blur-sm">
+<div class="relative mx-auto flex h-20 max-w-md items-center justify-around px-2">
+<a class="flex h-full w-full flex-col items-center justify-center gap-1 text-text-secondary-light dark:text-text-secondary-dark" href="#">
+<span class="material-symbols-outlined">assignment</span>
+<span class="text-xs font-medium">الاختبارات</span>
+</a>
+<a class="flex h-full w-full flex-col items-center justify-center gap-1 text-text-secondary-light dark:text-text-secondary-dark" href="#">
+<span class="material-symbols-outlined">notifications</span>
+<span class="text-xs font-medium">الإشعارات</span>
+</a>
+<div class="absolute -top-8 flex items-center justify-center">
+<button class="flex h-16 w-16 items-center justify-center rounded-full bg-primary text-white shadow-lg">
+<span class="material-symbols-outlined text-4xl">add</span>
+</button>
+</div>
+<a class="flex h-full w-full flex-col items-center justify-center gap-1 text-text-secondary-light dark:text-text-secondary-dark" href="#">
+<span class="material-symbols-outlined">settings</span>
+<span class="text-xs font-medium">الإعدادات</span>
+</a>
+<a class="flex h-full w-full flex-col items-center justify-center gap-1 text-text-secondary-light dark:text-text-secondary-dark" href="#">
+<span class="material-symbols-outlined">home</span>
+<span class="text-xs font-medium">الرئيسية</span>
+</a>
+</div>
+</footer>
+</div>
+</body></html>
