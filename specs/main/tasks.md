@@ -44,91 +44,91 @@
 
 ### Configuration & Theme
 
-- [ ] T012 [P] Create Supabase client configuration in src/config/supabase.config.ts
-- [ ] T013 [P] Create Stripe SDK configuration in src/config/stripe.config.ts
-- [ ] T014 [P] Create Gemini API configuration (Edge Function URLs) in src/config/gemini.config.ts
-- [ ] T015 [P] Create React Native Paper theme with RTL support and Noto Kufi Arabic typography in src/config/theme.config.ts
+- [X] T012 [P] Create Supabase client configuration in src/config/supabase.config.ts
+- [X] T013 [P] Create Stripe SDK configuration in src/config/stripe.config.ts
+- [X] T014 [P] Create Gemini API configuration (Edge Function URLs) in src/config/gemini.config.ts
+- [X] T015 [P] Create React Native Paper theme with RTL support and Noto Kufi Arabic typography in src/config/theme.config.ts
 
 ### Utility Functions
 
-- [ ] T016 [P] Create RTL layout helper functions in src/utils/rtl.utils.ts per research.md RTL best practices
-- [ ] T017 [P] Create input validation helpers in src/utils/validation.utils.ts
-- [ ] T018 [P] Create network error handling and offline detection utilities in src/utils/network.utils.ts
+- [X] T016 [P] Create RTL layout helper functions in src/utils/rtl.utils.ts per research.md RTL best practices
+- [X] T017 [P] Create input validation helpers in src/utils/validation.utils.ts
+- [X] T018 [P] Create network error handling and offline detection utilities in src/utils/network.utils.ts
 
 ### Type Definitions
 
-- [ ] T019 [P] Create common type definitions (Section, Difficulty, AcademicTrack) in src/types/common.types.ts
-- [ ] T020 [P] Create user type definitions (User, Profile, Session) in src/types/user.types.ts
-- [ ] T021 [P] Create subscription type definitions (Subscription, SubscriptionTier, SubscriptionStatus) in src/types/subscription.types.ts
-- [ ] T022 [P] Create exam type definitions (ExamSession, ExamResult, Question, QuestionAnswer) in src/types/exam.types.ts
-- [ ] T023 [P] Create practice type definitions (PracticeSession, PracticeResult, PracticeConfig) in src/types/practice.types.ts
-- [ ] T024 [P] Create analytics type definitions (UserAnalytics, CategoryPerformance) in src/types/analytics.types.ts
-- [ ] T025 [P] Create API type definitions (ServiceError, ApiResponse) in src/types/api.types.ts
+- [X] T019 [P] Create common type definitions (Section, Difficulty, AcademicTrack) in src/types/common.types.ts
+- [X] T020 [P] Create user type definitions (User, Profile, Session) in src/types/user.types.ts
+- [X] T021 [P] Create subscription type definitions (Subscription, SubscriptionTier, SubscriptionStatus) in src/types/subscription.types.ts
+- [X] T022 [P] Create exam type definitions (ExamSession, ExamResult, Question, QuestionAnswer) in src/types/exam.types.ts
+- [X] T023 [P] Create practice type definitions (PracticeSession, PracticeResult, PracticeConfig) in src/types/practice.types.ts
+- [X] T024 [P] Create analytics type definitions (UserAnalytics, CategoryPerformance) in src/types/analytics.types.ts
+- [X] T025 [P] Create API type definitions (ServiceError, ApiResponse) in src/types/api.types.ts
 
 ### Service Layer Foundation
 
-- [ ] T026 Create ServiceError class in src/services/errors/service-error.ts per client-services.md
-- [ ] T027 [P] Create GeminiServiceError class in src/services/errors/gemini-error.ts per gemini-ai.md
-- [ ] T028 Create ServicesContext provider with dependency injection pattern in src/contexts/ServicesContext.tsx per client-services.md
+- [X] T026 Create ServiceError class in src/services/errors/service-error.ts per client-services.md
+- [X] T027 [P] Create GeminiServiceError class in src/services/errors/gemini-error.ts per gemini-ai.md
+- [X] T028 Create ServicesContext provider with dependency injection pattern in src/contexts/ServicesContext.tsx per client-services.md
 
 ### Navigation Foundation
 
-- [ ] T029 Create navigation type definitions (AuthStackParamList, MainStackParamList) in src/navigation/types.ts
-- [ ] T030 Create AuthStack navigator placeholder in src/navigation/AuthStack.tsx
-- [ ] T031 Create MainStack navigator placeholder in src/navigation/MainStack.tsx
-- [ ] T032 Create AppNavigator with auth state switching in src/navigation/AppNavigator.tsx
+- [X] T029 Create navigation type definitions (AuthStackParamList, MainStackParamList) in src/navigation/types.ts
+- [X] T030 Create AuthStack navigator placeholder in src/navigation/AuthStack.tsx
+- [X] T031 Create MainStack navigator placeholder in src/navigation/MainStack.tsx
+- [X] T032 Create AppNavigator with auth state switching in src/navigation/AppNavigator.tsx
 
 ### Supabase Database Setup
 
-- [ ] T033 Apply migration for pgvector extension using mcp__supabase__apply_migration
-- [ ] T034 Apply migration for user_profiles table using mcp__supabase__apply_migration per data-model.md
-- [ ] T035 Apply migration for user_subscriptions table using mcp__supabase__apply_migration per data-model.md
-- [ ] T036 Apply migration for exam_sessions table using mcp__supabase__apply_migration per data-model.md
-- [ ] T037 Apply migration for exam_results table using mcp__supabase__apply_migration per data-model.md
-- [ ] T038 Apply migration for practice_sessions table using mcp__supabase__apply_migration per data-model.md
-- [ ] T039 Apply migration for practice_results table using mcp__supabase__apply_migration per data-model.md
-- [ ] T040 Apply migration for question_templates table using mcp__supabase__apply_migration per data-model.md
-- [ ] T041 Apply migration for question_embeddings table with VECTOR(768) column using mcp__supabase__apply_migration per data-model.md
-- [ ] T042 Apply migration for user_analytics table using mcp__supabase__apply_migration per data-model.md
-- [ ] T043 Apply migration for notification_preferences table using mcp__supabase__apply_migration per data-model.md
-- [ ] T044 Apply migration to enable RLS on all tables using mcp__supabase__apply_migration
-- [ ] T045 Apply migration for RLS policies per data-model.md using mcp__supabase__apply_migration
-- [ ] T046 Apply migration for HNSW vector index on question_embeddings using mcp__supabase__apply_migration
-- [ ] T047 Apply migration for has_premium_access() helper function using mcp__supabase__apply_migration per data-model.md
-- [ ] T048 Apply migration for update_user_analytics trigger function using mcp__supabase__apply_migration per data-model.md
+- [X] T033 Apply migration for pgvector extension using mcp__supabase__apply_migration
+- [X] T034 Apply migration for user_profiles table using mcp__supabase__apply_migration per data-model.md
+- [X] T035 Apply migration for user_subscriptions table using mcp__supabase__apply_migration per data-model.md
+- [X] T036 Apply migration for exam_sessions table using mcp__supabase__apply_migration per data-model.md
+- [X] T037 Apply migration for exam_results table using mcp__supabase__apply_migration per data-model.md
+- [X] T038 Apply migration for practice_sessions table using mcp__supabase__apply_migration per data-model.md
+- [X] T039 Apply migration for practice_results table using mcp__supabase__apply_migration per data-model.md
+- [X] T040 Apply migration for question_templates table using mcp__supabase__apply_migration per data-model.md
+- [X] T041 Apply migration for question_embeddings table with VECTOR(768) column using mcp__supabase__apply_migration per data-model.md
+- [X] T042 Apply migration for user_analytics table using mcp__supabase__apply_migration per data-model.md
+- [X] T043 Apply migration for notification_preferences table using mcp__supabase__apply_migration per data-model.md
+- [X] T044 Apply migration to enable RLS on all tables using mcp__supabase__apply_migration
+- [X] T045 Apply migration for RLS policies per data-model.md using mcp__supabase__apply_migration
+- [X] T046 Apply migration for HNSW vector index on question_embeddings using mcp__supabase__apply_migration
+- [X] T047 Apply migration for has_premium_access() helper function using mcp__supabase__apply_migration per data-model.md
+- [X] T048 Apply migration for update_user_analytics trigger function using mcp__supabase__apply_migration per data-model.md
 
 ### Supabase RPC Functions
 
-- [ ] T049 [P] Apply migration for check_exam_eligibility RPC function using mcp__supabase__apply_migration per supabase-rpc.md
-- [ ] T050 [P] Apply migration for calculate_practice_hours RPC function using mcp__supabase__apply_migration per supabase-rpc.md
-- [ ] T051 [P] Apply migration for get_category_performance RPC function using mcp__supabase__apply_migration per supabase-rpc.md
-- [ ] T052 [P] Apply migration for search_similar_questions RPC function using mcp__supabase__apply_migration per supabase-rpc.md
+- [X] T049 [P] Apply migration for check_exam_eligibility RPC function using mcp__supabase__apply_migration per supabase-rpc.md
+- [X] T050 [P] Apply migration for calculate_practice_hours RPC function using mcp__supabase__apply_migration per supabase-rpc.md
+- [X] T051 [P] Apply migration for get_category_performance RPC function using mcp__supabase__apply_migration per supabase-rpc.md
+- [X] T052 [P] Apply migration for search_similar_questions RPC function using mcp__supabase__apply_migration per supabase-rpc.md
 
 ### Storage Buckets
 
-- [ ] T053 [P] Create Supabase Storage bucket 'question-assets' (public) for generated images
-- [ ] T054 [P] Create Supabase Storage bucket 'profile-pictures' (private) for user uploads
+- [ ] T053 [P] Create Supabase Storage bucket 'question-assets' (public) for generated images (MANUAL - see PHASE2_SETUP.md)
+- [ ] T054 [P] Create Supabase Storage bucket 'profile-pictures' (private) for user uploads (MANUAL - see PHASE2_SETUP.md)
 
 ### Stripe Products Setup
 
-- [ ] T055 Create Stripe product 'Tafawoq Premium Monthly' using mcp__stripe-agent-toolkit__create_product
-- [ ] T056 Create Stripe price for premium subscription (SAR monthly) using mcp__stripe-agent-toolkit__create_price
+- [ ] T055 Create Stripe product 'Tafawoq Premium Monthly' (MANUAL - see PHASE2_SETUP.md)
+- [ ] T056 Create Stripe price for premium subscription (SAR monthly) (MANUAL - see PHASE2_SETUP.md)
 
 ### Type Generation
 
-- [ ] T057 Generate TypeScript types from Supabase schema using mcp__supabase__generate_typescript_types
+- [X] T057 Generate TypeScript types from Supabase schema using mcp__supabase__generate_typescript_types
 
 ### Common UI Components
 
-- [ ] T058 [P] Create LoadingSpinner component in src/components/common/LoadingSpinner.tsx
-- [ ] T059 [P] Create ErrorMessage component with Arabic text support in src/components/common/ErrorMessage.tsx
-- [ ] T060 [P] Create Button component with RTL support in src/components/common/Button.tsx
-- [ ] T061 [P] Create Card component in src/components/common/Card.tsx
-- [ ] T062 [P] Create Input component with Arabic placeholder support in src/components/common/Input.tsx
+- [X] T058 [P] Create LoadingSpinner component in src/components/common/LoadingSpinner.tsx
+- [X] T059 [P] Create ErrorMessage component with Arabic text support in src/components/common/ErrorMessage.tsx
+- [X] T060 [P] Create Button component with RTL support in src/components/common/Button.tsx
+- [X] T061 [P] Create Card component in src/components/common/Card.tsx
+- [X] T062 [P] Create Input component with Arabic placeholder support in src/components/common/Input.tsx
 
 ### App Entry Point
 
-- [ ] T063 Create App.tsx with RTL initialization (I18nManager.forceRTL), theme provider, ServicesContext, and navigation container
+- [X] T063 Create App.tsx with RTL initialization (I18nManager.forceRTL), theme provider, ServicesContext, and navigation container
 
 **Checkpoint**: Foundation complete - Database ready, Service layer structure in place, Navigation configured. User story implementation can now begin.
 
@@ -144,54 +144,54 @@
 
 #### Auth Service (per client-services.md)
 
-- [ ] T064 [US1] Implement AuthService interface in src/services/supabase/auth.service.ts
-- [ ] T065 [US1] Implement signUp method with email/password in src/services/supabase/auth.service.ts
-- [ ] T066 [US1] Implement verifyEmail method with OTP validation in src/services/supabase/auth.service.ts
-- [ ] T067 [US1] Implement signIn method in src/services/supabase/auth.service.ts
-- [ ] T068 [US1] Implement signOut method in src/services/supabase/auth.service.ts
-- [ ] T069 [US1] Implement resendVerificationOTP method with rate limiting in src/services/supabase/auth.service.ts
-- [ ] T070 [US1] Implement getCurrentSession method in src/services/supabase/auth.service.ts
-- [ ] T071 [US1] Implement onAuthStateChange subscription in src/services/supabase/auth.service.ts
+- [X] T064 [US1] Implement AuthService interface in src/services/supabase/auth.service.ts
+- [X] T065 [US1] Implement signUp method with email/password in src/services/supabase/auth.service.ts
+- [X] T066 [US1] Implement verifyEmail method with OTP validation in src/services/supabase/auth.service.ts
+- [X] T067 [US1] Implement signIn method in src/services/supabase/auth.service.ts
+- [X] T068 [US1] Implement signOut method in src/services/supabase/auth.service.ts
+- [X] T069 [US1] Implement resendVerificationOTP method with rate limiting in src/services/supabase/auth.service.ts
+- [X] T070 [US1] Implement getCurrentSession method in src/services/supabase/auth.service.ts
+- [X] T071 [US1] Implement onAuthStateChange subscription in src/services/supabase/auth.service.ts
 
 #### Profile Service (per client-services.md)
 
-- [ ] T072 [US1] Implement ProfileService interface in src/services/supabase/profile.service.ts
-- [ ] T073 [US1] Implement upsertProfile method in src/services/supabase/profile.service.ts
-- [ ] T074 [US1] Implement getProfile method in src/services/supabase/profile.service.ts
-- [ ] T075 [US1] Implement updateAcademicTrack method in src/services/supabase/profile.service.ts
-- [ ] T076 [US1] Implement uploadProfilePicture method with Supabase Storage in src/services/supabase/profile.service.ts
-- [ ] T077 [US1] Implement completeOnboarding method in src/services/supabase/profile.service.ts
+- [X] T072 [US1] Implement ProfileService interface in src/services/supabase/profile.service.ts
+- [X] T073 [US1] Implement upsertProfile method in src/services/supabase/profile.service.ts
+- [X] T074 [US1] Implement getProfile method in src/services/supabase/profile.service.ts
+- [X] T075 [US1] Implement updateAcademicTrack method in src/services/supabase/profile.service.ts
+- [X] T076 [US1] Implement uploadProfilePicture method with Supabase Storage in src/services/supabase/profile.service.ts
+- [X] T077 [US1] Implement completeOnboarding method in src/services/supabase/profile.service.ts
 
 #### Hooks
 
-- [ ] T078 [US1] Create useAuth hook for authentication state management in src/hooks/useAuth.ts
-- [ ] T079 [US1] Create useProfile hook for profile loading and updates in src/hooks/useProfile.ts
+- [X] T078 [US1] Create useAuth hook for authentication state management in src/hooks/useAuth.ts
+- [X] T079 [US1] Create useProfile hook for profile loading and updates in src/hooks/useProfile.ts
 
 #### Auth Screens
 
-- [ ] T080 [P] [US1] Create LoginScreen with email/password form and RTL layout in src/screens/auth/LoginScreen.tsx
-- [ ] T081 [P] [US1] Create RegisterScreen with email/password form and validation in src/screens/auth/RegisterScreen.tsx
-- [ ] T082 [US1] Create EmailVerificationScreen with OTP input in src/screens/auth/EmailVerificationScreen.tsx
+- [X] T080 [P] [US1] Create LoginScreen with email/password form and RTL layout in src/screens/auth/LoginScreen.tsx
+- [X] T081 [P] [US1] Create RegisterScreen with email/password form and validation in src/screens/auth/RegisterScreen.tsx
+- [X] T082 [US1] Create EmailVerificationScreen with OTP input in src/screens/auth/EmailVerificationScreen.tsx
 
 #### Onboarding Screens
 
-- [ ] T083 [P] [US1] Create WelcomeScreen with app introduction in src/screens/onboarding/WelcomeScreen.tsx
-- [ ] T084 [US1] Create ProfileSetupScreen with academic track selector and profile picture upload in src/screens/onboarding/ProfileSetupScreen.tsx
+- [X] T083 [P] [US1] Create WelcomeScreen with app introduction in src/screens/onboarding/WelcomeScreen.tsx
+- [X] T084 [US1] Create ProfileSetupScreen with academic track selector and profile picture upload in src/screens/onboarding/ProfileSetupScreen.tsx
 
 #### Navigation
 
-- [ ] T085 [US1] Update AuthStack navigator with auth screens in src/navigation/AuthStack.tsx
-- [ ] T086 [US1] Update AppNavigator with auth state switching in src/navigation/AppNavigator.tsx
+- [X] T085 [US1] Update AuthStack navigator with auth screens in src/navigation/AuthStack.tsx
+- [X] T086 [US1] Update AppNavigator with auth state switching in src/navigation/AppNavigator.tsx
 
 #### Dashboard (Basic)
 
-- [ ] T087 [US1] Create basic HomeScreen placeholder for authenticated users in src/screens/dashboard/HomeScreen.tsx
+- [X] T087 [US1] Create basic HomeScreen placeholder for authenticated users in src/screens/dashboard/HomeScreen.tsx
 
 #### Error Handling & Validation
 
-- [ ] T088 [US1] Add form validation and Arabic error messages to LoginScreen
-- [ ] T089 [US1] Add form validation and Arabic error messages to RegisterScreen
-- [ ] T090 [US1] Add loading states to all auth screens
+- [X] T088 [US1] Add form validation and Arabic error messages to LoginScreen
+- [X] T089 [US1] Add form validation and Arabic error messages to RegisterScreen
+- [X] T090 [US1] Add loading states to all auth screens
 
 **Checkpoint**: User Story 1 complete - Users can register, verify email, set up profile, and access dashboard independently.
 

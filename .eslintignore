@@ -1,0 +1,33 @@
+# Dependencies
+node_modules/
+
+# Build outputs
+dist/
+build/
+web-build/
+.expo/
+.expo-shared/
+
+# Generated files
+coverage/
+.nyc_output/
+*.tsbuildinfo
+
+# Native
+ios/Pods/
+ios/build/
+android/build/
+android/app/build/
+android/.gradle/
+
+# Config files
+*.config.js
+babel.config.js
+metro.config.js
+
+# Test files (optional - uncomment if you don't want to lint tests)
+# __tests__/
+# **/*.test.ts
+# **/*.test.tsx
+# **/*.spec.ts
+# **/*.spec.tsx
