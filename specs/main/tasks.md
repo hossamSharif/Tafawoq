@@ -207,38 +207,38 @@
 
 #### Subscription Service (per client-services.md)
 
-- [ ] T091 [US2] Implement SubscriptionService interface in src/services/stripe/subscription.service.ts
-- [ ] T092 [US2] Implement getSubscription method in src/services/stripe/subscription.service.ts
-- [ ] T093 [US2] Implement hasPremiumAccess method in src/services/stripe/subscription.service.ts
-- [ ] T094 [US2] Implement initializePremiumCheckout method in src/services/stripe/subscription.service.ts
-- [ ] T095 [US2] Implement presentPaymentSheet method in src/services/stripe/subscription.service.ts
-- [ ] T096 [US2] Implement cancelSubscription method in src/services/stripe/subscription.service.ts
-- [ ] T097 [US2] Implement reactivateSubscription method in src/services/stripe/subscription.service.ts
-- [ ] T098 [US2] Implement refreshSubscriptionStatus method with polling in src/services/stripe/subscription.service.ts
+- [X] T091 [US2] Implement SubscriptionService interface in src/services/stripe/subscription.service.ts
+- [X] T092 [US2] Implement getSubscription method in src/services/stripe/subscription.service.ts
+- [X] T093 [US2] Implement hasPremiumAccess method in src/services/stripe/subscription.service.ts
+- [X] T094 [US2] Implement initializePremiumCheckout method in src/services/stripe/subscription.service.ts
+- [X] T095 [US2] Implement presentPaymentSheet method in src/services/stripe/subscription.service.ts
+- [X] T096 [US2] Implement cancelSubscription method in src/services/stripe/subscription.service.ts
+- [X] T097 [US2] Implement reactivateSubscription method in src/services/stripe/subscription.service.ts
+- [X] T098 [US2] Implement refreshSubscriptionStatus method with polling in src/services/stripe/subscription.service.ts
 
 #### Edge Function - Stripe Webhook Handler (per supabase-rpc.md)
 
-- [ ] T099 [US2] Create stripe-webhook-handler Edge Function in supabase/functions/stripe-webhook-handler/index.ts
-- [ ] T100 [US2] Implement Stripe signature validation in stripe-webhook-handler
-- [ ] T101 [US2] Implement customer.subscription.created event handler in stripe-webhook-handler
-- [ ] T102 [US2] Implement customer.subscription.updated event handler in stripe-webhook-handler
-- [ ] T103 [US2] Implement customer.subscription.deleted event handler in stripe-webhook-handler
-- [ ] T104 [US2] Implement invoice.payment_failed event handler in stripe-webhook-handler
-- [ ] T105 [US2] Deploy stripe-webhook-handler Edge Function using mcp__supabase__deploy_edge_function
+- [X] T099 [US2] Create stripe-webhook-handler Edge Function in supabase/functions/stripe-webhook-handler/index.ts
+- [X] T100 [US2] Implement Stripe signature validation in stripe-webhook-handler
+- [X] T101 [US2] Implement customer.subscription.created event handler in stripe-webhook-handler
+- [X] T102 [US2] Implement customer.subscription.updated event handler in stripe-webhook-handler
+- [X] T103 [US2] Implement customer.subscription.deleted event handler in stripe-webhook-handler
+- [X] T104 [US2] Implement invoice.payment_failed event handler in stripe-webhook-handler
+- [X] T105 [US2] Deploy stripe-webhook-handler Edge Function using mcp__supabase__deploy_edge_function
 
 #### Hooks
 
-- [ ] T106 [US2] Create useSubscription hook for subscription state management in src/hooks/useSubscription.ts
+- [X] T106 [US2] Create useSubscription hook for subscription state management in src/hooks/useSubscription.ts
 
 #### Screens
 
-- [ ] T107 [US2] Create SubscriptionScreen with tier display and upgrade button in src/screens/settings/SubscriptionScreen.tsx
-- [ ] T108 [US2] Add subscription tier badge to HomeScreen in src/screens/dashboard/HomeScreen.tsx
+- [X] T107 [US2] Create SubscriptionScreen with tier display and upgrade button in src/screens/settings/SubscriptionScreen.tsx
+- [X] T108 [US2] Add subscription tier badge to HomeScreen in src/screens/dashboard/HomeScreen.tsx
 
 #### Error Handling
 
-- [ ] T109 [US2] Add Arabic error messages for payment failures in SubscriptionScreen
-- [ ] T110 [US2] Add loading states during payment processing
+- [X] T109 [US2] Add Arabic error messages for payment failures in SubscriptionScreen
+- [X] T110 [US2] Add loading states during payment processing
 
 **Checkpoint**: User Story 2 complete - Users can view subscription status, upgrade to premium, and manage billing independently.
 

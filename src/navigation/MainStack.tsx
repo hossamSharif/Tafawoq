@@ -12,7 +12,10 @@ import type { MainStackParamList } from './types';
 // Dashboard screens
 import { HomeScreen } from '@/screens/dashboard/HomeScreen';
 
-// Placeholder screens (will be implemented in Phases 4-8)
+// Settings screens
+import { SubscriptionScreen } from '@/screens/settings/SubscriptionScreen';
+
+// Placeholder screens (will be implemented in Phases 5-8)
 const PlaceholderScreen = () => <></>;
 
 const Stack = createStackNavigator<MainStackParamList>();
@@ -75,7 +78,7 @@ export const MainStack: React.FC = () => {
       {/* Subscription Screen */}
       <Stack.Screen
         name="Subscription"
-        component={PlaceholderScreen}
+        component={SubscriptionScreen}
         options={{
           title: 'الاشتراك',
         }}

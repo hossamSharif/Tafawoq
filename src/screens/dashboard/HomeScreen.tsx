@@ -9,14 +9,15 @@
  */
 
 import React from 'react';
-import { View, StyleSheet, ScrollView } from 'react-native';
-import { Text } from 'react-native-paper';
+import { View, StyleSheet, ScrollView, TouchableOpacity } from 'react-native';
+import { Text, Chip } from 'react-native-paper';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { NativeStackScreenProps } from '@react-navigation/native-stack';
 
 import { theme } from '@/config/theme.config';
 import { useAuth } from '@/hooks/useAuth';
 import { useProfile } from '@/hooks/useProfile';
+import { useSubscription } from '@/hooks/useSubscription';
 import { Button } from '@/components/common/Button';
 import { Card } from '@/components/common/Card';
 import { LoadingSpinner } from '@/components/common/LoadingSpinner';
@@ -27,6 +28,7 @@ type Props = NativeStackScreenProps<MainStackParamList, 'Home'>;
 export const HomeScreen: React.FC<Props> = ({ navigation }) => {
   const { user, signOut } = useAuth();
   const { profile, isLoading } = useProfile(user?.id);
+  const { isPremium, subscription } = useSubscription(user?.id);
 
   /**
    * Handle sign out
@@ -52,9 +54,25 @@ export const HomeScreen: React.FC<Props> = ({ navigation }) => {
       <ScrollView contentContainerStyle={styles.scrollContent}>
         {/* Header */}
         <View style={styles.header}>
-          <Text variant="headlineMedium" style={styles.welcomeText}>
-            مرحباً {firstName}!
-          </Text>
+          <View style={styles.headerTop}>
+            <Text variant="headlineMedium" style={styles.welcomeText}>
+              مرحباً {firstName}!
+            </Text>
+            {/* Subscription Tier Badge - T108 */}
+            <TouchableOpacity onPress={() => navigation.navigate('Subscription')}>
+              <Chip
+                mode="flat"
+                style={[
+                  styles.tierBadge,
+                  isPremium ? styles.premiumBadge : styles.freeBadge,
+                ]}
+                textStyle={styles.tierBadgeText}
+                icon={isPremium ? 'crown' : 'account'}
+              >
+                {isPremium ? 'مميز' : 'مجاني'}
+              </Chip>
+            </TouchableOpacity>
+          </View>
           <Text variant="bodyLarge" style={styles.subtitle}>
             {profile?.academicTrack === 'scientific' ? 'المسار العلمي' : 'المسار الأدبي'}
           </Text>
@@ -137,12 +155,9 @@ export const HomeScreen: React.FC<Props> = ({ navigation }) => {
 
             <Button
               mode="text"
-              onPress={() => {
-                // Will be implemented in Phase 4 (US2)
-              }}
+              onPress={() => navigation.navigate('Subscription')}
               style={styles.settingButton}
               icon="crown"
-              disabled // Disabled until Phase 4
             >
               الاشتراك المميز
             </Button>
@@ -174,11 +189,30 @@ const styles = StyleSheet.create({
   header: {
     marginBottom: 24,
   },
+  headerTop: {
+    flexDirection: 'row-reverse', // RTL layout
+    justifyContent: 'space-between',
+    alignItems: 'center',
+    marginBottom: 8,
+  },
   welcomeText: {
     color: theme.colors.onSurface,
     fontFamily: 'NotoKufiArabic_700Bold',
     textAlign: 'right',
-    marginBottom: 8,
+    flex: 1,
+  },
+  tierBadge: {
+    marginStart: 8,
+  },
+  premiumBadge: {
+    backgroundColor: '#FFD700', // Gold color for premium
+  },
+  freeBadge: {
+    backgroundColor: theme.colors.surfaceVariant,
+  },
+  tierBadgeText: {
+    fontFamily: 'NotoKufiArabic_700Bold',
+    fontSize: 12,
   },
   subtitle: {
     color: theme.colors.primary,
